@@ -5,12 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="color-scheme" content="light">
 <meta name="supported-color-schemes" content="light">
-<title>Golden Chi mit Lisa Lee — Zurück in den eigenen Rhythmus | Tai Chi, Chi Gong & Daoistische Heilarbeit</title>
-<meta name="description" content="Begleitung für Menschen, die aus dem Tempo herauswollen. Tai Chi, Chi Gong und daoistische Heilarbeit — eine lebendige Praxis, keine Technik. Online und vor Ort zwischen Europa und Bali.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<title>Golden Chi mit Lisa Lee · Zurück in den eigenen Rhythmus | Tai Chi, Chi Gong & Daoistische Heilarbeit</title>
+<meta name="description" content="Begleitung für Menschen, die aus dem Tempo herauswollen. Tai Chi, Chi Gong und daoistische Heilarbeit, eine lebendige Praxis, keine Technik. Online und vor Ort zwischen Europa und Bali.">
+<link rel="preload" href="fonts/spectral-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/hanken-grotesk-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <style>
+  /* Self-hosted fonts (no third-party requests, DSGVO-clean) */
+  @font-face{font-family:'Spectral';font-style:normal;font-weight:300;font-display:swap;src:url('fonts/spectral-latin-300-normal.woff2') format('woff2')}
+  @font-face{font-family:'Spectral';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/spectral-latin-400-normal.woff2') format('woff2')}
+  @font-face{font-family:'Spectral';font-style:normal;font-weight:500;font-display:swap;src:url('fonts/spectral-latin-500-normal.woff2') format('woff2')}
+  @font-face{font-family:'Spectral';font-style:italic;font-weight:300;font-display:swap;src:url('fonts/spectral-latin-300-italic.woff2') format('woff2')}
+  @font-face{font-family:'Spectral';font-style:italic;font-weight:400;font-display:swap;src:url('fonts/spectral-latin-400-italic.woff2') format('woff2')}
+  @font-face{font-family:'Hanken Grotesk';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/hanken-grotesk-latin-400-normal.woff2') format('woff2')}
+  @font-face{font-family:'Hanken Grotesk';font-style:normal;font-weight:500;font-display:swap;src:url('fonts/hanken-grotesk-latin-500-normal.woff2') format('woff2')}
+  @font-face{font-family:'Hanken Grotesk';font-style:normal;font-weight:600;font-display:swap;src:url('fonts/hanken-grotesk-latin-600-normal.woff2') format('woff2')}
+
   :root{
     color-scheme: light only;
     --mist:        #ECEDE7;
@@ -114,8 +123,8 @@
 
   /* RECOGNITION: 4 points in 2 columns, turn text underneath */
   .recog .points{display:grid;gap:1.05rem;max-width:40ch}
-  .recog .points p{font-family:"Hanken Grotesk",sans-serif;font-size:clamp(1.15rem,1.6vw,1.4rem);font-weight:400;line-height:1.4;color:var(--ink);margin:0;max-width:none;padding-left:1.5em;text-indent:-1.5em}
-  .recog .points p::before{content:"—";color:var(--jade-2);margin-right:.55em}
+  .recog .points p{font-family:"Hanken Grotesk",sans-serif;font-size:clamp(1.15rem,1.6vw,1.4rem);font-weight:400;line-height:1.4;color:var(--ink);margin:0;max-width:none;padding-left:1.2em;text-indent:-1.2em}
+  .recog .points p::before{content:"";display:inline-block;width:.5em;height:.5em;border-radius:50%;border:1.6px solid var(--jade);margin-right:.7em;vertical-align:.06em}
   .recog .turn{font-size:1.08rem;max-width:52ch;color:var(--ink-soft)}
 
   /* HALTUNG */
@@ -271,12 +280,12 @@
       <div class="hero-inner">
         <p class="kicker">Tai Chi · Chi Gong · Daoistische Heilarbeit</p>
         <h1>Zurück in den eigenen Rhythmus.</h1>
-        <p class="lead">Ich begleite Menschen, die aus dem Tempo herauswollen — zurück in die eigene Stille, in die Kraft des Einfachen.</p>
+        <p class="lead">Ich begleite Menschen, die aus dem Tempo herauswollen, zurück in die eigene Stille, in die Kraft des Einfachen.</p>
         <div class="hero-cta">
           <a class="btn btn-primary" href="#gespraech">Ein erstes Gespräch <span class="arrow">&rarr;</span></a>
           <a class="btn btn-ghost" href="#wege">Die Wege ansehen</a>
         </div>
-        <p class="hero-note">Online und vor Ort — zwischen Europa und Bali. Keine Vorerfahrung nötig.</p>
+        <p class="hero-note">Online und vor Ort, zwischen Europa und Bali. Keine Vorerfahrung nötig.</p>
       </div>
     </div>
   </section>
@@ -289,12 +298,12 @@
         <div class="points">
           <p>Du hast genug optimiert.</p>
           <p>Mehr Produktivität nährt dich nicht.</p>
-          <p>Noch eine App, noch ein Self-Help — und doch leer.</p>
+          <p>Noch eine App, noch ein Self-Help, und doch leer.</p>
           <p>Eine Müdigkeit, die du nicht Burnout nennen würdest.</p>
         </div>
       </div>
       <div class="split-r">
-        <p class="turn">Was fehlt, ist keine neue Technik. Sondern eine lebendige Praxis — etwas, das du nicht abarbeitest, sondern lebst. Ein Weg zurück in den Körper, in den Atem, in die Ruhe, die ohnehin schon da ist.</p>
+        <p class="turn">Was fehlt, ist keine neue Technik. Sondern eine lebendige Praxis: etwas, das du nicht abarbeitest, sondern lebst. Ein Weg zurück in den Körper, in den Atem, in die Ruhe, die ohnehin schon da ist.</p>
       </div>
     </div>
   </section>
@@ -304,11 +313,11 @@
     <div class="wrap split reveal">
       <div class="split-l">
         <p class="kicker">Keine Methode. Eine Haltung.</p>
-        <h2>Ich lehre nicht, was ich weiß — sondern wie ich lebe.</h2>
+        <h2>Ich lehre nicht, was ich weiß, sondern wie ich lebe.</h2>
       </div>
       <div class="split-r">
         <p>Ich bin kein Wellness-Coach und keine spirituelle Influencerin. Ich bin eine Wegbegleiterin im daoistischen Sinne. Was ich teile, ist keine Sammlung von Übungen, sondern eine Haltung: die Einheit von Lehre und Leben.</p>
-        <p>Freiheit lässt sich nicht unterrichten. Sie zeigt sich darin, wie jemand lebt. Ich reise leicht, übe täglich und arbeite von dort aus, wo ich gerade bin. Das ist kein Konzept — es ist der Boden, auf dem alles andere steht.</p>
+        <p>Freiheit lässt sich nicht unterrichten. Sie zeigt sich darin, wie jemand lebt. Ich reise leicht, übe täglich und arbeite von dort aus, wo ich gerade bin. Das ist kein Konzept. Es ist der Boden, auf dem alles andere steht.</p>
         <p class="pull">„Das Weiche überwindet das Harte. Die Stille bewegt mehr als die Eile.“</p>
       </div>
     </div>
@@ -319,14 +328,14 @@
     <div class="wrap reveal">
       <div class="sec-head">
         <p class="kicker">Die Praxis</p>
-        <h2 class="h2-sm">Drei Wege in denselben Fluss — Bewegung, Atem, Berührung.</h2>
-        <p class="sec-intro">Drei Übungswege, ein Prinzip: weniger tun, mehr da sein. Du musst nichts können — es genügt, aufzutauchen und mitzugehen.</p>
+        <h2 class="h2-sm">Drei Wege in denselben Fluss: Bewegung, Atem, Berührung.</h2>
+        <p class="sec-intro">Drei Übungswege, ein Prinzip: weniger tun, mehr da sein. Du musst nichts können. Es genügt, aufzutauchen und mitzugehen.</p>
       </div>
       <div class="practice-grid">
         <div class="practice">
           <h3>Tai Chi</h3>
           <p class="zh">太极 · bewegte Stille</p>
-          <p>Langsame, durchgehende Bewegung, in der Körper und Geist zur Ruhe kommen. Kein Sport, kein Leistungsdruck — ein Gehen im eigenen Tempo.</p>
+          <p>Langsame, durchgehende Bewegung, in der Körper und Geist zur Ruhe kommen. Kein Sport, kein Leistungsdruck. Ein Gehen im eigenen Tempo.</p>
         </div>
         <div class="practice">
           <h3>Chi Gong</h3>
@@ -360,18 +369,18 @@
                 <li>I turned dreamy and traveled to meadows from my childhood</li>
                 <li>I remembered the pleasure of practicing Javanese dance</li>
                 <li>I settled into the belief that everything's going to be alright</li>
-                <li>I found a way to plan my future — the plan was already there, now it's a solid road map</li>
+                <li>I found a way to plan my future: the plan was already there, now it's a solid road map</li>
               </ul>
             </blockquote>
-            <cite>— Jan Jalan</cite>
+            <cite>Jan Jalan</cite>
           </article>
           <article class="slide" data-slide hidden>
             <blockquote>
-              <p>I had my first Chi Gong session with Lisa and it was a truly beautiful experience. I reached a deep state of relaxation, yet at the same time felt surprisingly energized by the end — with a sense of inner peace that I don't usually achieve through meditation.</p>
+              <p>I had my first Chi Gong session with Lisa and it was a truly beautiful experience. I reached a deep state of relaxation, yet at the same time felt surprisingly energized by the end, with a sense of inner peace that I don't usually achieve through meditation.</p>
               <p>The flow of Chi felt very tangible: warmth in the hands, a gentle tingling, almost like touching energy directly. It was both grounding and subtle at once, and left me feeling centered and restored.</p>
               <p>She creates a calm, attentive space that makes it easy to let go and fully experience the practice. I'm genuinely curious to continue exploring this discipline.</p>
             </blockquote>
-            <cite>— Vita</cite>
+            <cite>Vita</cite>
           </article>
         </div>
         <div class="slider-nav">
@@ -392,14 +401,14 @@
       <div class="sec-head reveal">
         <p class="kicker">Wege, gemeinsam zu gehen</p>
         <h2 class="h2-sm">Drei Tiefen. Wähle nach dem, wo du gerade stehst.</h2>
-        <p class="sec-intro">Drei Angebote in unterschiedlicher Tiefe und Verbindlichkeit. Such dir nicht das größte aus — sondern das, das gerade stimmt.</p>
+        <p class="sec-intro">Drei Angebote in unterschiedlicher Tiefe und Verbindlichkeit. Such dir nicht das größte aus, sondern das, das gerade stimmt.</p>
       </div>
 
       <div class="offer-grid">
         <article class="card reveal">
           <span class="o-tag">Beginnen</span>
           <h3>Der gemeinsame Morgen</h3>
-          <p class="o-for">Für alle, die eine ruhige, regelmäßige Praxis suchen — ortsunabhängig, auch unterwegs.</p>
+          <p class="o-for">Für alle, die eine ruhige, regelmäßige Praxis suchen, ortsunabhängig, auch unterwegs.</p>
           <ul class="incl">
             <li>Wöchentliche Live-Praxis online (Tai Chi &amp; Chi Gong), ca. 45 Min.</li>
             <li>Monatlicher daoistischer Impuls als Text oder Audio</li>
@@ -416,10 +425,10 @@
         <article class="card feature reveal">
           <span class="o-tag">Vertiefen</span>
           <h3>Zurück in den Fluss</h3>
-          <p class="o-for">Persönliche Begleitung über drei Monate — für einen Übergang, der Tiefe statt Technik braucht.</p>
+          <p class="o-for">Persönliche Begleitung über drei Monate, für einen Übergang, der Tiefe statt Technik braucht.</p>
           <ul class="incl">
             <li>1:1-Begleitung, Praxis nach deinem Rhythmus aufgebaut</li>
-            <li>Daoistische Heilarbeit — online angeleitet, vor Ort wenn unsere Wege sich kreuzen</li>
+            <li>Daoistische Heilarbeit, online angeleitet, vor Ort wenn unsere Wege sich kreuzen</li>
             <li>Regelmäßige Gespräche, dazwischen erreichbar</li>
             <li>Kein Programm von der Stange, sondern dein Weg</li>
           </ul>
@@ -433,12 +442,12 @@
         <article class="card reveal">
           <span class="o-tag">Eintauchen</span>
           <h3>In die Stille</h3>
-          <p class="o-for">Ein Retreat vor Ort — gemeinsame Tage in der Natur, an wechselnden Orten zwischen Europa und Bali.</p>
+          <p class="o-for">Ein Retreat vor Ort: gemeinsame Tage in der Natur, an wechselnden Orten zwischen Europa und Bali.</p>
           <ul class="incl">
             <li>5 Tage Praxis: Morgen-Tai-Chi, Chi Gong, Heilarbeit, Stille</li>
             <li>Kleine Gruppe, höchstens acht Menschen</li>
             <li>Das nomadische Leben als gelebtes Beispiel, nicht als Thema</li>
-            <li>Raum zwischen den Einheiten — nichts ist vollgepackt</li>
+            <li>Raum zwischen den Einheiten, nichts ist vollgepackt</li>
           </ul>
           <div class="o-price">
             <b>ab 1.450&nbsp;€</b>
@@ -448,7 +457,7 @@
         </article>
       </div>
 
-      <p class="offer-note reveal">Wenn der Preis gerade im Weg steht, sprich mich an. Für manche gibt es Spielraum — wichtiger als das Geld ist, dass der Weg passt.</p>
+      <p class="offer-note reveal">Wenn der Preis gerade im Weg steht, sprich mich an. Für manche gibt es Spielraum. Wichtiger als das Geld ist, dass der Weg passt.</p>
     </div>
   </section>
 
@@ -460,8 +469,8 @@
         <div>
           <p class="kicker">Wer ich bin</p>
           <h2>Ich unterrichte Freiheit nicht.<br>Ich lebe sie.</h2>
-          <p class="muted">Ich komme aus Deutschland und lebe nomadisch — im Pendeln zwischen Europa und Bali. Tai Chi, Chi Gong und die daoistische Heilarbeit sind dabei nicht mein Beruf neben dem Leben, sondern die Art, wie ich lebe.</p>
-          <p class="muted">Menschen folgen mir nicht, weil ich Content mache. Sondern weil ich etwas verkörpere: eine Verankerung, die nicht an einen Ort gebunden ist, und eine Ruhe, die man nicht kaufen, nur üben kann. Genau das gebe ich weiter — ohne große Worte, von Mensch zu Mensch.</p>
+          <p class="muted">Ich komme aus Deutschland und lebe nomadisch, im Pendeln zwischen Europa und Bali. Tai Chi, Chi Gong und die daoistische Heilarbeit sind dabei nicht mein Beruf neben dem Leben, sondern die Art, wie ich lebe.</p>
+          <p class="muted">Menschen folgen mir nicht, weil ich Content mache. Sondern weil ich etwas verkörpere: eine Verankerung, die nicht an einen Ort gebunden ist, und eine Ruhe, die man nicht kaufen, nur üben kann. Genau das gebe ich weiter, ohne große Worte, von Mensch zu Mensch.</p>
         </div>
       </div>
     </div>
@@ -478,11 +487,11 @@
       </details>
       <details>
         <summary><span class="q">Online oder vor Ort?</span><span class="pm">+</span></summary>
-        <p>Beides. Die laufende Praxis findet online statt, damit sie ortsunabhängig bleibt — für dich und für mich. Begegnungen vor Ort gibt es bei Retreats und wenn unsere Wege sich in Europa oder auf Bali kreuzen.</p>
+        <p>Beides. Die laufende Praxis findet online statt, damit sie ortsunabhängig bleibt, für dich und für mich. Begegnungen vor Ort gibt es bei Retreats und wenn unsere Wege sich in Europa oder auf Bali kreuzen.</p>
       </details>
       <details>
         <summary><span class="q">In welcher Sprache findet das statt?</span><span class="pm">+</span></summary>
-        <p>Auf Deutsch — und bei Bedarf auf Englisch.</p>
+        <p>Auf Deutsch und bei Bedarf auf Englisch.</p>
       </details>
       <details>
         <summary><span class="q">Was, wenn der Preis gerade nicht passt?</span><span class="pm">+</span></summary>
@@ -499,7 +508,7 @@
   <section id="gespraech" class="final">
     <div class="wrap reveal">
       <svg class="ring-min" viewBox="0 0 60 60" aria-hidden="true"><circle cx="30" cy="30" r="25"/></svg>
-      <h2>Ein erstes Gespräch — ruhig, unverbindlich.</h2>
+      <h2>Ein erstes Gespräch, ruhig und unverbindlich.</h2>
       <p>20–30 Minuten, um zu spüren, ob es passt. Kein Verkaufsgespräch, kein Druck. Nur die Frage: Wohin willst du eigentlich zurück?</p>
       <a class="btn btn-primary" href="mailto:[deine@adresse.de]?subject=Ein%20erstes%20Gespräch" style="font-size:1.05rem;padding:1rem 2rem">Gespräch anfragen <span class="arrow">&rarr;</span></a>
     </div>
@@ -531,7 +540,8 @@
       <div class="foot-links">
         <a href="#wege">Wege</a>
         <a href="#gespraech">Kontakt</a>
-        <a href="#impressum">Impressum</a>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
       </div>
     </div>
   </div>
