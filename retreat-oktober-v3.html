@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="dark light">
+<title>Eine Woche im Fluss · Tai Chi Retreat im Tessin | 04.–10. Oktober 2026 | Golden Chi mit Lisa Lee</title>
+<meta name="description" content="Sechs Nächte, sieben Tage Tai Chi und Meditation über dem Lago di Lugano. Kleine Gruppe von 10 Plätzen, Bio-Verpflegung. Anmeldung ab 1. September 2026, jetzt auf die Warteliste. 04.–10. Oktober 2026, Hotel Panorama, Pugerna (Schweiz).">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --pine:      #22423A;
+    --pine-deep: #1A332D;
+    --pine-soft: #2F5C50;
+    --sage:      #8FB0A4;
+    --cream:     #F2F1E8;
+    --cream-2:   #E9E9DE;
+    --gold:      #C9A45C;
+    --gold-soft: #E6C57E;
+    --ink:       #1C211E;
+    --ink-soft:  #49514B;
+    --line-d:    rgba(242,241,232,.14);
+    --line-l:    rgba(28,33,30,.12);
+    --maxw:      1120px;
+  }
+
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;background:var(--pine);overflow-x:hidden}
+  body{
+    margin:0;background:var(--pine);color:var(--cream);overflow-x:hidden;max-width:100vw;
+    font-family:"Hanken Grotesk",system-ui,sans-serif;
+    font-size:1.05rem;line-height:1.7;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+  }
+  .wrap{max-width:var(--maxw);margin-inline:auto;padding-inline:clamp(1.25rem,5vw,3rem)}
+  h1,h2,h3{font-family:"Spectral",Georgia,serif;font-weight:300;letter-spacing:-.01em;line-height:1.1;margin:0}
+  p{max-width:62ch}
+  a{color:inherit}
+  .kicker{display:inline-flex;align-items:center;gap:.6rem;font-size:.72rem;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin:0 0 1.3rem}
+  .kicker::before{content:"";width:26px;height:1px;background:var(--gold)}
+
+  .btn{display:inline-flex;align-items:center;gap:.55rem;font-weight:600;font-size:.95rem;text-decoration:none;cursor:pointer;
+    padding:.9rem 1.7rem;border-radius:999px;border:1px solid transparent;transition:.25s ease}
+  .btn-gold{background:var(--gold);color:#1d2017}
+  .btn-gold:hover{background:#B08D48;box-shadow:0 10px 28px -12px rgba(201,164,92,.6)}
+  .btn-line{background:transparent;color:var(--cream);border-color:var(--line-d)}
+  .btn-line:hover{border-color:var(--gold);color:var(--gold-soft)}
+  .light .btn-line{color:var(--ink);border-color:var(--line-l)}
+  .light .btn-line:hover{border-color:var(--pine-soft);color:var(--pine-soft)}
+  .btn .arrow{transition:transform .25s ease}
+  .btn:hover .arrow{transform:translateX(3px)}
+
+  section{padding-block:clamp(3rem,6vw,5.25rem)}
+  .light{background:var(--cream);color:var(--ink)}
+  .light h1,.light h2,.light h3{color:var(--ink)}
+  .light .kicker{color:var(--pine-soft)}
+  .light .kicker::before{background:var(--pine-soft)}
+  .muted{color:var(--sage)}
+  .light .muted{color:var(--ink-soft)}
+
+  /* icons */
+  .ico{width:26px;height:26px;flex:none;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+
+  /* HEADER */
+  header.bar{position:sticky;top:0;z-index:50;background:rgba(26,51,45,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line-d)}
+  .bar .wrap{display:flex;align-items:center;justify-content:space-between;padding-block:.95rem}
+  .brand{display:flex;align-items:center;gap:.7rem;font-family:"Spectral",serif;font-size:1.1rem;text-decoration:none;color:var(--cream)}
+  .brand .glyph{width:22px;height:22px}
+  .brand .glyph circle{fill:none;stroke:var(--gold);stroke-width:2.4;stroke-linecap:round}
+  nav.links{display:flex;align-items:center;gap:1.8rem;font-size:.92rem}
+  nav.links a:not(.btn){text-decoration:none;color:var(--sage)}
+  nav.links a:not(.btn):hover{color:var(--cream)}
+  @media(max-width:760px){nav.links a.hide-sm{display:none}}
+
+  /* HERO */
+  .hero{position:relative;overflow:hidden;text-align:center;padding-block:clamp(4rem,9vw,7rem) clamp(4.5rem,9vw,7rem);
+    background:radial-gradient(120% 100% at 50% -20%, var(--pine-soft), var(--pine) 55%, var(--pine-deep))}
+  .rings{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:min(140vw,980px);aspect-ratio:1;pointer-events:none;opacity:.5}
+  .rings span{position:absolute;inset:0;border:1px solid var(--sage);border-radius:50%;opacity:.25;animation:ripple 9s ease-in-out infinite}
+  .rings span:nth-child(2){inset:12%;animation-delay:1.5s;opacity:.3}
+  .rings span:nth-child(3){inset:24%;animation-delay:3s;opacity:.35}
+  .rings span:nth-child(4){inset:36%;animation-delay:4.5s;opacity:.4}
+  @keyframes ripple{0%,100%{transform:scale(.97)}50%{transform:scale(1.03)}}
+  .hero .wrap{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center}
+  .hero h1{font-size:clamp(2.5rem,6vw,4.4rem);color:var(--cream);max-width:16ch;margin-bottom:1.2rem}
+  .hero h1 em{font-style:italic;color:var(--gold-soft)}
+  .hero .sub{font-family:"Spectral",serif;font-size:clamp(1.15rem,2vw,1.45rem);line-height:1.55;color:var(--sage);max-width:48ch;margin:0 0 2.2rem}
+  .meta{display:flex;flex-wrap:wrap;justify-content:center;gap:.7rem 1rem;margin:0 0 2.4rem;padding:0;list-style:none;font-size:.92rem}
+  .meta li{display:inline-flex;align-items:center;gap:.55rem;border:1px solid var(--line-d);border-radius:999px;padding:.5rem 1.05rem;color:var(--cream)}
+  .meta .ico{width:17px;height:17px;color:var(--gold)}
+  .hero-cta{display:flex;flex-wrap:wrap;justify-content:center;gap:1rem}
+  .hero-note{font-size:.85rem;color:var(--sage);margin:1.6rem 0 0}
+  /* flowing water line */
+  .flow{position:absolute;left:0;right:0;bottom:-4px;z-index:1;height:110px;width:100%}
+  .flow path{fill:none;stroke:var(--gold);stroke-width:1.5;opacity:.55;stroke-dasharray:14 10;animation:flow 26s linear infinite}
+  .flow path+path{stroke:var(--sage);opacity:.35;animation-duration:38s;animation-direction:reverse}
+  @keyframes flow{to{stroke-dashoffset:-960}}
+
+  /* BONUS BAND */
+  .bonus{background:var(--pine-deep);border-block:1px solid var(--line-d);padding-block:1.4rem}
+  .bonus .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:1rem 1.4rem;justify-content:center;text-align:center}
+  .bonus .pulse{position:relative;width:10px;height:10px;border-radius:50%;background:var(--gold);flex:none}
+  .bonus .pulse::after{content:"";position:absolute;inset:-6px;border-radius:50%;border:1px solid var(--gold);animation:pulse 2.2s ease-out infinite}
+  @keyframes pulse{0%{transform:scale(.5);opacity:1}100%{transform:scale(1.5);opacity:0}}
+  .bonus p{margin:0;font-size:.97rem;color:var(--cream);max-width:none}
+  .bonus b{color:var(--gold-soft);font-weight:600}
+  .highlight{background:rgba(201,164,92,.22);color:var(--gold-soft);font-weight:600;padding:.15em .55em;border-radius:6px}
+
+  /* INTRO */
+  .intro .grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(2rem,5vw,5rem);align-items:center}
+  .intro .grid>*,.ort .grid>*{min-width:0}
+  @media(max-width:860px){.intro .grid{grid-template-columns:minmax(0,1fr)}}
+  .intro h2{font-size:clamp(1.7rem,3vw,2.4rem);max-width:18ch}
+  .intro .big{font-family:"Spectral",serif;font-size:clamp(1.1rem,1.8vw,1.35rem);line-height:1.6;color:var(--ink-soft)}
+  .intro .big+p{margin-top:1rem}
+
+  /* PROGRAM */
+  .prog-head{max-width:60ch;margin-bottom:clamp(2rem,4vw,3rem)}
+  .prog-head h2{font-size:clamp(1.7rem,3vw,2.4rem);color:var(--cream)}
+  .prog-head p{color:var(--sage);margin:.9rem 0 0}
+  .prog-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.2rem}
+  @media(max-width:880px){.prog-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  @media(max-width:600px){.prog-grid{grid-template-columns:minmax(0,1fr)}}
+  .prog{border:1px solid var(--line-d);border-radius:16px;padding:1.7rem 1.5rem;background:rgba(242,241,232,.03);transition:.3s ease}
+  .prog:hover{border-color:rgba(201,164,92,.55);transform:translateY(-4px);background:rgba(242,241,232,.05)}
+  .prog .ico{color:var(--gold);width:30px;height:30px;margin-bottom:1rem;animation:float 6s ease-in-out infinite}
+  .prog:nth-child(2n) .ico{animation-delay:1.2s}
+  .prog:nth-child(3n) .ico{animation-delay:2.4s}
+  @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+  .prog h3{font-size:1.28rem;font-weight:400;color:var(--cream);margin-bottom:.45rem}
+  .prog p{font-size:.95rem;color:var(--sage);margin:0;max-width:none}
+
+  /* ORT */
+  .ort .grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(2rem,4vw,3.5rem);align-items:center}
+  @media(max-width:860px){.ort .grid{grid-template-columns:minmax(0,1fr)}}
+  .ort h2{font-size:clamp(1.7rem,3vw,2.4rem);margin-bottom:1.2rem}
+  .ort p{color:var(--ink-soft)}
+  .ort p+p{margin-top:1rem}
+  .facts{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.6rem;padding:0;list-style:none}
+  .facts li{display:inline-flex;align-items:center;gap:.5rem;font-size:.88rem;color:var(--pine-soft);border:1px solid rgba(47,92,80,.35);border-radius:999px;padding:.4rem .95rem}
+  .facts .ico{width:16px;height:16px}
+  .ph{display:grid;place-items:center;text-align:center;border:1.5px dashed rgba(47,92,80,.5);border-radius:16px;
+    background:rgba(47,92,80,.06);color:var(--ink-soft);font-size:.85rem;line-height:1.5;padding:1.2rem;min-height:190px;width:100%;max-width:100%}
+  .ort-media{min-width:0}
+  img,svg,video{max-width:100%}
+  .ico,.glyph{max-width:none}
+  .ph strong{display:block;color:var(--pine-soft);font-weight:600;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:.35rem}
+  .ort-media{display:grid;gap:1rem}
+  .ph--wide{aspect-ratio:16/10}
+  .ph--slim{aspect-ratio:16/7}
+
+  /* GALLERY / LIGHTBOX */
+  .gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+  .gallery-tile{all:unset;cursor:pointer;display:block;border-radius:16px;overflow:hidden;width:100%}
+  .gallery-tile:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+  .gallery-tile .ph{cursor:pointer;transition:.3s ease;min-height:0;aspect-ratio:4/3}
+  .gallery-tile--wide{grid-column:1 / -1}
+  .gallery-tile--wide .ph{aspect-ratio:16/9}
+  .gallery-tile:hover .ph,.gallery-tile:focus-visible .ph{border-color:rgba(47,92,80,.85);background:rgba(47,92,80,.12)}
+  .gallery-hint{margin-top:.9rem;font-size:.82rem;color:var(--ink-soft)}
+
+  .lightbox{position:fixed;inset:0;z-index:100;display:flex;align-items:center;justify-content:center;background:rgba(20,28,24,.92);padding:2rem}
+  .lightbox[hidden]{display:none}
+  .lightbox-content{max-width:min(90vw,760px);width:100%}
+  .lightbox-content .ph{min-height:min(60vh,480px);background:rgba(242,241,232,.06);border-color:rgba(201,164,92,.5);color:var(--cream);aspect-ratio:auto}
+  .lightbox-content .ph strong{color:var(--gold-soft)}
+  .lightbox-close,.lightbox-prev,.lightbox-next{all:unset;box-sizing:border-box;cursor:pointer;color:var(--cream);position:absolute;display:grid;place-items:center;width:44px;height:44px;border-radius:50%;border:1px solid var(--line-d);transition:.2s ease}
+  .lightbox-close:hover,.lightbox-prev:hover,.lightbox-next:hover{border-color:var(--gold);color:var(--gold-soft)}
+  .lightbox-close{top:1.5rem;right:1.5rem;font-size:1.3rem}
+  .lightbox-prev{left:1.5rem;top:50%;transform:translateY(-50%);font-size:1.1rem}
+  .lightbox-next{right:1.5rem;top:50%;transform:translateY(-50%);font-size:1.1rem}
+  @media(max-width:640px){.lightbox-prev,.lightbox-next{width:36px;height:36px}.lightbox-close{width:36px;height:36px;top:1rem;right:1rem}}
+
+  /* TIMELINE */
+  .zeit h2{font-size:clamp(1.7rem,3vw,2.4rem);color:var(--cream)}
+  .zeit .lead-p{color:var(--sage);margin:.9rem 0 0;max-width:56ch}
+  .tl{position:relative;margin-top:clamp(2.2rem,4vw,3.2rem);padding-left:2rem;max-width:680px}
+  .tl::before{content:"";position:absolute;left:8px;top:6px;bottom:6px;width:2px;background:var(--line-d)}
+  .tl .grow{position:absolute;left:8px;top:6px;width:2px;height:calc(100% - 12px);background:var(--gold);transform:scaleY(0);transform-origin:top;transition:transform 2.4s cubic-bezier(.4,.05,.2,1)}
+  .tl.in .grow{transform:scaleY(1)}
+  .tl-item{position:relative;padding:0 0 2rem 1.4rem}
+  .tl-item:last-child{padding-bottom:0}
+  .tl-item::before{content:"";position:absolute;left:-1.72rem;top:.5em;width:11px;height:11px;border-radius:50%;background:var(--pine);border:2px solid var(--gold)}
+  .tl-item h3{font-size:1.25rem;font-weight:400;color:var(--gold-soft);margin-bottom:.35rem}
+  .tl-item .zeiten{display:grid;gap:.35rem;margin:.5rem 0 0;font-size:.95rem}
+  .tl-item .zeiten span{display:grid;grid-template-columns:5.2rem 1fr;gap:.7rem;color:var(--sage)}
+  .tl-item .zeiten b{font-family:"Spectral",serif;font-weight:500;color:var(--cream)}
+  .tl-item p{color:var(--sage);font-size:.95rem;margin:.4rem 0 0}
+  .tl-note{margin-top:2rem;font-size:.9rem;color:var(--sage);max-width:58ch}
+
+  /* TESTIMONIAL */
+  .stimme{background:var(--pine-deep);border-block:1px solid var(--line-d)}
+  .stimme .wrap{max-width:760px;text-align:center}
+  .stimme .qmark{width:44px;height:44px;margin:0 auto 1.4rem;color:var(--gold);animation:float 7s ease-in-out infinite}
+  .quote-ph{border:1.5px dashed rgba(201,164,92,.5);border-radius:16px;padding:clamp(1.6rem,3vw,2.4rem);background:rgba(201,164,92,.05)}
+  .quote-ph blockquote{margin:0;font-family:"Spectral",serif;font-style:italic;font-weight:300;font-size:clamp(1.1rem,1.8vw,1.35rem);line-height:1.6;color:var(--cream)}
+  .quote-ph cite{display:block;font-style:normal;font-weight:600;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);margin-top:1.2rem}
+  .quote-ph .hint{font-size:.82rem;color:var(--sage);margin:1.4rem auto 0;max-width:48ch}
+
+  /* PRICING */
+  .preise h2{font-size:clamp(1.7rem,3vw,2.4rem)}
+  .preise .sec-intro{color:var(--ink-soft);margin:.9rem 0 0;max-width:56ch}
+  .tier-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.2rem;margin-top:clamp(2rem,4vw,3rem);align-items:stretch}
+  @media(max-width:920px){.tier-grid{grid-template-columns:minmax(0,1fr);max-width:540px;margin-inline:auto}}
+  .tier{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line-l);border-radius:18px;padding:2rem 1.7rem;transition:.3s ease}
+  .tier:hover{transform:translateY(-5px);box-shadow:0 24px 55px -30px rgba(26,51,45,.45)}
+  .tier-tag{align-self:flex-start;font-size:.68rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;border-radius:999px;padding:.32rem .75rem;margin-bottom:1.2rem;color:var(--pine-soft);border:1px solid rgba(47,92,80,.35)}
+  .tier h3{font-size:1.45rem;font-weight:400;margin-bottom:.35rem}
+  .tier .for{font-size:.92rem;color:var(--ink-soft);margin:0 0 1.3rem}
+  .tier .price{font-family:"Spectral",serif;font-weight:300;font-size:1.55rem;color:var(--ink);line-height:1.25}
+  .tier .price small{display:block;font-family:"Hanken Grotesk",sans-serif;font-size:.8rem;font-weight:500;letter-spacing:.02em;color:var(--ink-soft);margin-top:.3rem}
+  .tier ul{list-style:none;padding:0;margin:1.4rem 0 1.6rem;display:grid;gap:.65rem}
+  .tier li{display:flex;gap:.6rem;font-size:.93rem;line-height:1.5;color:var(--ink-soft)}
+  .tier li .ico{width:17px;height:17px;margin-top:.2em;color:var(--pine-soft)}
+  .tier .cta{margin-top:auto}
+  .tier--hot{background:var(--pine);border-color:var(--pine);color:var(--cream)}
+  .tier--hot h3,.tier--hot .price{color:var(--cream)}
+  .tier--hot .for,.tier--hot li,.tier--hot .price small{color:var(--sage)}
+  .tier--hot li .ico{color:var(--gold)}
+  .tier--hot .tier-tag{color:var(--gold-soft);border-color:rgba(201,164,92,.5)}
+  .tier--gold .tier-tag{color:#8a6a24;border-color:rgba(201,164,92,.6);background:rgba(201,164,92,.12)}
+  .frist{display:inline-flex;align-items:center;gap:.5rem;font-size:.82rem;color:#8a6a24;background:rgba(201,164,92,.14);border-radius:999px;padding:.35rem .9rem;margin-top:.9rem}
+  .frist .ico{width:15px;height:15px}
+  .preis-note{margin:2.2rem auto 0;max-width:56ch;text-align:center;font-size:.93rem;color:var(--ink-soft)}
+  .todo{background:rgba(201,164,92,.28);border-radius:4px;padding:0 .35em}
+
+  /* FAQ */
+  .faq h2{font-size:clamp(1.6rem,2.8vw,2.2rem);margin-bottom:1.5rem}
+  details{border-top:1px solid var(--line-l);padding:1rem 0}
+  details[open] summary .q{color:var(--pine-soft)}
+  summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:baseline;gap:1rem}
+  summary::-webkit-details-marker{display:none}
+  summary .q{font-family:"Spectral",serif;font-size:1.15rem;transition:color .2s}
+  summary .pm{flex:none;color:var(--pine-soft);font-size:1.3rem;line-height:1;transition:transform .25s}
+  details[open] summary .pm{transform:rotate(45deg)}
+  details p{margin:.85rem 0 0;font-size:.98rem;color:var(--ink-soft)}
+
+  /* FINAL */
+  .final{position:relative;overflow:hidden;text-align:center;background:radial-gradient(110% 120% at 50% 120%, var(--pine-soft), var(--pine) 60%, var(--pine-deep))}
+  .final h2{font-size:clamp(1.8rem,3.2vw,2.6rem);color:var(--cream);max-width:24ch;margin:0 auto 1.3rem}
+  .final p{margin:0 auto 2.2rem;color:var(--sage)}
+  .final .ring-min{width:52px;height:52px;margin:0 auto 1.8rem}
+  .final .ring-min circle{fill:none;stroke:var(--gold);stroke-width:3;stroke-linecap:round;stroke-dasharray:160;stroke-dashoffset:160;animation:draw 2.6s ease .3s forwards}
+  @keyframes draw{to{stroke-dashoffset:20}}
+
+  footer{background:var(--pine-deep);border-top:1px solid var(--line-d);padding-block:2.4rem;font-size:.85rem;color:var(--sage)}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:1.4rem 2rem;justify-content:space-between;align-items:flex-start}
+  footer a{color:var(--sage);text-decoration:none}
+  footer a:hover{color:var(--cream)}
+  .disclaimer{max-width:62ch;margin-top:1rem;line-height:1.55}
+
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .9s ease,transform .9s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  @media(prefers-reduced-motion:reduce){
+    *{animation:none!important;transition:none!important}
+    html{scroll-behavior:auto}
+    .reveal{opacity:1;transform:none}
+    .tl .grow{transform:scaleY(1)}
+    .final .ring-min circle{stroke-dashoffset:20}
+  }
+  :focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:4px}
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Zur Startseite">
+      <svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/></svg>
+      <span>Golden&nbsp;Chi mit Lisa&nbsp;Lee</span>
+    </a>
+    <nav class="links" aria-label="Hauptnavigation">
+      <a class="hide-sm" href="#programm">Programm</a>
+      <a class="hide-sm" href="#ablauf">Ablauf</a>
+      <a class="hide-sm" href="#preise">Preise</a>
+      <a class="btn btn-gold" href="#anfrage">Zur Warteliste</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="rings" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+    <div class="wrap">
+      <p class="kicker" style="justify-content:center">Tai Chi Retreat · Tessin, Schweiz</p>
+      <h1>Eine Woche <em>im Fluss</em>.</h1>
+      <p class="sub">Sechs Nächte, sieben Tage Tai&nbsp;Chi, Meditation und Stille über dem Lago di Lugano. Zeit, den eigenen Rhythmus wiederzufinden.</p>
+      <ul class="meta">
+        <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>04.–10. Oktober 2026</li>
+        <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>Hotel Panorama, Pugerna</li>
+        <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 20c.6-3.4 2.9-5 5.5-5s4.9 1.6 5.5 5"/><circle cx="17" cy="9" r="2.4"/><path d="M15.8 15.2c2.6.2 4.3 1.6 4.7 4.3"/></svg>10 Plätze</li>
+        <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>6&nbsp;Nächte / 7&nbsp;Tage</li>
+      </ul>
+      <div class="hero-cta">
+        <a class="btn btn-gold" href="#anfrage">Zur Warteliste <span class="arrow">&rarr;</span></a>
+        <a class="btn btn-line" href="#ablauf">Der Ablauf</a>
+      </div>
+      <p class="hero-note">Keine Vorerfahrung nötig · Auf Deutsch, bei Bedarf auf Englisch · Anmeldung öffnet am 1.&nbsp;September 2026</p>
+    </div>
+    <svg class="flow" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,55 C120,25 240,85 360,55 C480,25 600,85 720,55 C840,25 960,85 1080,55 C1200,25 1320,85 1440,55"/>
+      <path d="M0,80 C120,50 240,105 360,78 C480,50 600,105 720,78 C840,50 960,105 1080,78 C1200,50 1320,105 1440,78"/>
+    </svg>
+  </section>
+
+  <!-- BONUS BAND -->
+  <section class="bonus" aria-label="Frühbucher-Bonus">
+    <div class="wrap">
+      <span class="pulse" aria-hidden="true"></span>
+      <p><span class="highlight">Anmeldung öffnet am 1. September 2026.</span></p>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="light intro">
+    <div class="wrap grid reveal">
+      <div>
+        <p class="kicker">Warum diese Woche</p>
+        <h2>Wie fühlt sich ein Leben im Fluss an?</h2>
+      </div>
+      <div>
+        <p class="big">Vielleicht war das Jahr schneller als du. Vielleicht arbeitet dein Kopf sogar im Urlaub weiter. Diese Woche lädt dich ein, langsamer zu werden als dein Alltag, und zu spüren, was dann geschieht.</p>
+        <p class="big">Ein einfacher, tragender Rhythmus: Meditation am Morgen, Tai&nbsp;Chi am Vormittag, Wandern über dem See am Nachmittag, Stille dazwischen. Der Herbst im Tessin macht den Anfang leicht. Du musst nichts können. Es genügt, anzukommen.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMM -->
+  <section id="programm">
+    <div class="wrap reveal">
+      <div class="prog-head">
+        <p class="kicker">Das Programm</p>
+        <h2>Wenige Elemente. Viel Wirkung.</h2>
+        <p>Die Tage sind bewusst nicht vollgepackt. Wiederholung trägt tiefer als Abwechslung.</p>
+      </div>
+      <div class="prog-grid">
+        <div class="prog">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9c3-2.5 6-2.5 9 0s6 2.5 9 0"/><path d="M3 15c3-2.5 6-2.5 9 0s6 2.5 9 0"/></svg>
+          <h3>Tai Chi</h3>
+          <p>Zweimal täglich Praxis: 90 Minuten am Vormittag, eine kürzere Einheit am Nachmittag. Langsam, durchgehend, im eigenen Tempo, Schritt für Schritt durch die Woche aufgebaut.</p>
+        </div>
+        <div class="prog">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="6.5" r="2.4"/><path d="M12 9v4M7 21c1-4 2.8-6 5-6s4 2 5 6M5.5 16.5c2-1.4 4.2-2.1 6.5-2.1s4.5.7 6.5 2.1"/></svg>
+          <h3>Meditation</h3>
+          <p>Der Tag beginnt und endet in der Stille. Morgens eine Stunde Sitzen, abends Meditation mit sanfter Bewegung.</p>
+        </div>
+        <div class="prog">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 19 9.5 7l4 7 2.5-4L21 19Z"/><path d="M8 19h13"/></svg>
+          <h3>Wandern über dem See</h3>
+          <p>Nachmittags in die Tessiner Berge. Gehen, Tai&nbsp;Chi im Freien und Meditation in der Landschaft.</p>
+        </div>
+        <div class="prog">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 11V6.5a1.5 1.5 0 0 1 3 0V11m0-3.5a1.5 1.5 0 0 1 3 0V11m0-2.5a1.5 1.5 0 0 1 3 0V13c0 4-2 7-5.5 7S6 17.5 6 14v-2a1.5 1.5 0 0 1 1-1.4"/></svg>
+          <h3>Daoistische Akupressur</h3>
+          <p>Einzelsessions bei Lisa an den freien Mittwoch- und Freitagnachmittagen. Tiefe, sanfte Arbeit an den Bahnen des Körpers. Optional, auf Anfrage.</p>
+        </div>
+        <div class="prog">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21c3.6 0 6-2.4 6-5.6 0-3.8-3.2-5.6-4.4-9.4-2 1.6-2.7 3.5-2.6 5.5-1.2-.6-2-1.6-2.4-3C7 10.2 6 12.4 6 15.4 6 18.6 8.4 21 12 21Z"/></svg>
+          <h3>Feuerzeremonie</h3>
+          <p>Am Freitagabend versammeln wir uns am Feuer. Ein stiller, einfacher Abschluss der Woche. Was du nicht mitnehmen willst, darfst du dort lassen.</p>
+        </div>
+        <div class="prog">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="3"/></svg>
+          <h3>Raum &amp; Gemeinschaft</h3>
+          <p>Eine kleine Gruppe von 10 Menschen, gemeinsame Mahlzeiten und freie Zeit ohne Programmzwang.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ORT -->
+  <section class="light ort" id="ort">
+    <div class="wrap grid reveal">
+      <div>
+        <p class="kicker">Der Ort</p>
+        <h2>Über dem Lago di Lugano.</h2>
+        <p>Das familiengeführte Hotel Panorama liegt in Pugerna, einem kleinen Dorf am Hang über dem Lago di Lugano, auf der Schweizer Seite des Tessins. Ruhe, Weitblick und Wasser geben der Woche ihren Rahmen.</p>
+        <p>Geübt wird im lichten Yoga-Saal mit 70&nbsp;m², ausgestattet mit Matten, Decken, Sitzpolstern und Stühlen für alle, die lieber erhöht sitzen. Untergebracht bist du im Einzelzimmer direkt im Haus. Das gilt für alle Teilnehmenden.</p>
+        <ul class="facts">
+          <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M5 21V8l7-4 7 4v13M9.5 21v-5h5v5"/></svg>Familiengeführtes Haus</li>
+          <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 12h18"/></svg>Yoga-Saal 70&nbsp;m²</li>
+          <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9c3-2.5 6-2.5 9 0s6 2.5 9 0"/><path d="M3 15c3-2.5 6-2.5 9 0s6 2.5 9 0"/></svg>Seeblick &amp; Bergluft</li>
+        </ul>
+      </div>
+      <div class="ort-media">
+        <div class="gallery" role="group" aria-label="Bildergalerie Hotel Panorama">
+          <button type="button" class="gallery-tile gallery-tile--wide" data-gallery-index="0" aria-label="Bild vergrößern: Blick vom Hotel Panorama über den Lago di Lugano">
+            <span class="ph ph--wide" aria-hidden="true"><span><strong>Platzhalter-Bild</strong>Blick vom Hotel Panorama über den Lago di Lugano</span></span>
+          </button>
+          <button type="button" class="gallery-tile" data-gallery-index="1" aria-label="Bild vergrößern: Der Yoga-Saal, 70 Quadratmeter">
+            <span class="ph" aria-hidden="true"><span><strong>Platzhalter-Bild</strong>Der Yoga-Saal (70&nbsp;m²)</span></span>
+          </button>
+          <button type="button" class="gallery-tile" data-gallery-index="2" aria-label="Bild vergrößern: Einzelzimmer im Hotel Panorama">
+            <span class="ph" aria-hidden="true"><span><strong>Platzhalter-Bild</strong>Einzelzimmer im Hotel Panorama</span></span>
+          </button>
+          <button type="button" class="gallery-tile" data-gallery-index="3" aria-label="Bild vergrößern: Terrasse und Seeblick">
+            <span class="ph" aria-hidden="true"><span><strong>Platzhalter-Bild</strong>Terrasse &amp; Seeblick</span></span>
+          </button>
+          <button type="button" class="gallery-tile" data-gallery-index="4" aria-label="Bild vergrößern: Gemeinsame Mahlzeiten">
+            <span class="ph" aria-hidden="true"><span><strong>Platzhalter-Bild</strong>Gemeinsame Mahlzeiten</span></span>
+          </button>
+        </div>
+        <p class="gallery-hint">Klicken für die Großansicht.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX (Bildergalerie) -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button type="button" class="lightbox-close" aria-label="Schließen">&times;</button>
+    <button type="button" class="lightbox-prev" aria-label="Vorheriges Bild">&larr;</button>
+    <div class="lightbox-content" id="lightboxContent"></div>
+    <button type="button" class="lightbox-next" aria-label="Nächstes Bild">&rarr;</button>
+  </div>
+
+  <!-- ABLAUF -->
+  <section id="ablauf" class="zeit">
+    <div class="wrap reveal">
+      <p class="kicker">Der Ablauf</p>
+      <h2>Sieben Tage, ein Rhythmus.</h2>
+      <p class="lead-p">Von Sonntag bis Samstag: sechs Nächte, sieben Tage. Der Kern der Woche folgt jeden Tag demselben ruhigen Muster. Genau darin liegt seine Kraft.</p>
+      <div class="tl" data-timeline>
+        <span class="grow" aria-hidden="true"></span>
+        <div class="tl-item">
+          <h3>Sonntag · Ankommen</h3>
+          <div class="zeiten">
+            <span><b>15:00</b> Anreise &amp; Einchecken</span>
+            <span><b>17:00</b> Eröffnungsrunde</span>
+            <span><b>18:30</b> Gemeinsames Abendessen</span>
+            <span><b>20:00</b> Tai Chi &amp; Meditation</span>
+          </div>
+        </div>
+        <div class="tl-item">
+          <h3>Montag, Dienstag, Donnerstag · Der tägliche Rhythmus</h3>
+          <div class="zeiten">
+            <span><b>08:00</b> Meditation</span>
+            <span><b>09:15</b> Tai Chi (90 Min.)</span>
+            <span><b>10:45</b> Frühstücksbrunch</span>
+            <span><b>13:00</b> Tai Chi (kurz) &amp; Wandern über dem See</span>
+            <span><b>18:00</b> Abendessen</span>
+            <span><b>20:00</b> Meditation &amp; sanfte Bewegung</span>
+          </div>
+        </div>
+        <div class="tl-item">
+          <h3>Mittwoch · Der freie Nachmittag</h3>
+          <p>Morgens läuft der gewohnte Rhythmus mit Meditation und Tai Chi weiter. Der Nachmittag gehört dir: der See, ein Buch, ein Gespräch. Oder du buchst eine daoistische Akupressur-Einzelsession bei Lisa (13:30–15:00 oder 15:30–17:00, gegen Aufpreis).</p>
+        </div>
+        <div class="tl-item">
+          <h3>Freitag · Freier Nachmittag &amp; Feuerzeremonie</h3>
+          <p>Wie am Mittwoch bleibt der Nachmittag frei: Zeit für dich oder eine weitere Akupressur-Einzelsession bei Lisa. Um 20:00 schließen wir die Woche gemeinsam am Feuer. Ein Ritual des Loslassens vor der Heimreise.</p>
+        </div>
+        <div class="tl-item">
+          <h3>Samstag · Abschluss</h3>
+          <div class="zeiten">
+            <span><b>08:00</b> Meditation</span>
+            <span><b>09:15</b> Tai Chi</span>
+            <span><b>10:45</b> Brunch</span>
+            <span><b>12:00</b> Abschlussrunde &amp; Abreise</span>
+          </div>
+        </div>
+      </div>
+      <p class="tl-note">Alle Einheiten sind Einladungen. Wer eine Runde aussetzen will, setzt aus. Auch das ist Praxis. Verpflegt wirst du dabei in Bio-Qualität mit regionalen Produkten: Frühstücksbrunch, Nachmittagssnack mit Früchten und Nüssen, gemeinsames Abendessen. Wasser, Kaffee und Tee sind inklusive.</p>
+    </div>
+  </section>
+
+  <!-- TESTIMONIAL -->
+  <section class="stimme">
+    <div class="wrap reveal">
+      <svg class="qmark" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5 16c0-4.4 2.6-8 7-9.6l.8 1.7C10 9.4 8.6 11 8.3 13H11v6H5v-3Zm9 0c0-4.4 2.6-8 7-9.6l.8 1.7C19 9.4 17.6 11 17.3 13H20v6h-6v-3Z"/></svg>
+      <div class="quote-ph">
+        <blockquote>„I had my first Chi Gong session with Lisa and it was a truly beautiful experience. I reached a deep state of relaxation, yet at the same time felt surprisingly energized by the end, with a sense of inner peace that I don't usually achieve through meditation. The flow of Chi felt very tangible: warmth in the hands, a gentle tingling, almost like touching energy directly. It was both grounding and subtle at once, and left me feeling centered and restored. She creates a calm, attentive space that makes it easy to let go and fully experience the practice. I'm genuinely curious to continue exploring this discipline."</blockquote>
+        <cite>Vita <span class="todo">[Foto einsetzen, sobald Lisa eines von Vita erhalten hat]</span></cite>
+      </div>
+    </div>
+  </section>
+
+  <!-- PREISE -->
+  <section id="preise" class="light preise">
+    <div class="wrap reveal">
+      <p class="kicker">Preise</p>
+      <h2>Drei Wege, dabei zu sein.</h2>
+      <p class="sec-intro">Alle Optionen enthalten das volle Programm, 6 Übernachtungen im Einzelzimmer inkl. Kurtaxe und Bio-Vollverpflegung. Ratenzahlung ist bei allen möglich. Die genauen Preise schicke ich dir gern persönlich per E-Mail.</p>
+
+      <div class="tier-grid">
+        <article class="tier tier--gold">
+          <span class="tier-tag">Früh entschieden</span>
+          <h3>Early Bird</h3>
+          <p class="for">Reduzierter Preis für alle, die jetzt schon wissen, dass der Oktober ihnen gehört.</p>
+          <span class="frist"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5M9 2h6"/></svg>Buchbar bis <span class="todo">[Datum, nach Anmeldestart 1. September]</span></span>
+          <ul>
+            <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12.5 2.5 2.5L16 9.5"/></svg>Volles Retreat-Programm</li>
+            <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12.5 2.5 2.5L16 9.5"/></svg>6 Nächte im Einzelzimmer, inkl. Kurtaxe</li>
+            <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12.5 2.5 2.5L16 9.5"/></svg>Bio-Vollverpflegung</li>
+            <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12.5 2.5 2.5L16 9.5"/></svg>Reduzierter Frühbucher-Preis</li>
+          </ul>
+        </article>
+
+        <article class="tier tier--hot">
+          <span class="tier-tag">Die Woche</span>
+          <h3>Standard</h3>
+          <p class="for">Der volle Rahmen. Ankommen, üben, auftanken.</p>
+          <ul>
+            <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12.5 2.5 2.5L16 9.5"/></svg>Volles Retreat-Programm: Tai Chi, Meditation, Wanderungen, Feuerzeremonie</li>
+            <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12.5 2.5 2.5L16 9.5"/></svg>6 Nächte im Einzelzimmer, inkl. Kurtaxe</li>
+            <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12.5 2.5 2.5L16 9.5"/></svg>Bio-Vollverpflegung: Brunch, Snack, Abendessen</li>
+            <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12.5 2.5 2.5L16 9.5"/></svg>Kleine Gruppe mit 10 Menschen</li>
+          </ul>
+        </article>
+
+        <article class="tier">
+          <span class="tier-tag">Mit Tiefe</span>
+          <h3>Im Fluss Plus</h3>
+          <p class="for">Für alle, die die Woche mit persönlicher Heilarbeit vertiefen möchten.</p>
+          <ul>
+            <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12.5 2.5 2.5L16 9.5"/></svg>Alles aus Standard</li>
+            <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12.5 2.5 2.5L16 9.5"/></svg>2 daoistische Akupressur-Einzelsessions während der Woche</li>
+            <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12.5 2.5 2.5L16 9.5"/></svg>1 persönliches Nachgespräch online, ca. 4 Wochen nach dem Retreat</li>
+          </ul>
+        </article>
+      </div>
+
+      <div style="text-align:center;margin-top:2.2rem">
+        <a class="btn btn-gold" href="mailto:[deine@adresse.de]?subject=Retreat%20Eine%20Woche%20im%20Fluss%20%C2%B7%20Preisinfo%20%26%20Reservierung">Preisinfo und Reservierung per Email</a>
+      </div>
+
+      <!--
+        INTERN: Preise für Direktlink/E-Mail (NICHT auf der öffentlichen Seite anzeigen):
+        Early Bird:     ca. 1.490 € pro Person (reduzierter Preis; Frist von Lisa festzulegen, nach Anmeldestart 1. September)
+        Standard:       1.650 € pro Person
+        Im Fluss Plus:  ca. 1.850 € pro Person (inkl. 2 Akupressur-Sessions + 1 Nachgespräch online ~4 Wochen später)
+        Anzahlung / Restzahlung / Stornobedingungen / Zahlungsart (Überweisung, PayPal, Wise): von Lisa festzulegen, dann in Follow-up-E-Mail bzw. Teilnahmebedingungen aufnehmen.
+      -->
+
+      <p class="preis-note">Nicht enthalten sind An- und Abreise sowie persönliche Ausgaben. Alle Details zu Anmeldung, Anzahlung und Zahlungsweise bekommst du persönlich per E-Mail, sobald die Anmeldung am 1. September öffnet. Wenn der Preis gerade im Weg steht, sprich mich an. Der Weg soll am Geld nicht scheitern.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="light faq" style="padding-top:0">
+    <div class="wrap reveal" style="max-width:760px;margin-inline:auto">
+      <p class="kicker">Fragen</p>
+      <h2>Gut zu wissen</h2>
+      <details>
+        <summary><span class="q">Brauche ich Vorerfahrung in Tai Chi oder Meditation?</span><span class="pm">+</span></summary>
+        <p>Nein. Die Woche trägt Einsteiger:innen und hat zugleich Tiefe für Geübte. Es geht ums Dabeisein, um sonst gar nichts.</p>
+      </details>
+      <details>
+        <summary><span class="q">Wie komme ich nach Pugerna?</span><span class="pm">+</span></summary>
+        <p>Pugerna liegt oberhalb des Lago di Lugano, wenige Kilometer von Lugano entfernt. Die Anreise organisierst du selbst, etwa mit dem Zug bis Lugano und weiter mit Bus oder Taxi, oder mit dem Auto. Nach der Anmeldung bekommst du eine genaue Anreisebeschreibung. <span class="todo">[Genaue ÖV-Verbindung und ggf. Abholservice ergänzen]</span></p>
+      </details>
+      <details>
+        <summary><span class="q">Bekomme ich ein Einzelzimmer?</span><span class="pm">+</span></summary>
+        <p>Ja. Alle Teilnehmenden wohnen im Einzelzimmer direkt im Hotel Panorama, im Preis enthalten.</p>
+      </details>
+      <details>
+        <summary><span class="q">Was beinhaltet das Nachgespräch beim Plus-Paket?</span><span class="pm">+</span></summary>
+        <p>Das rund 4 Wochen nach dem Retreat stattfindende Online-Gespräch kannst du flexibel nutzen: etwa als Tai-Chi-Auffrischung oder als energetische Nachbegleitung. Wir stimmen den Inhalt kurz vorher gemeinsam ab.</p>
+      </details>
+      <details>
+        <summary><span class="q">Wie läuft die Anmeldung, und was gilt bei Absage?</span><span class="pm">+</span></summary>
+        <p>Die Anmeldung öffnet am 1. September 2026. Alle Details zu Anzahlung, Zahlungsfristen und Stornobedingungen bekommst du persönlich per E-Mail, sobald du dich auf die Warteliste einträgst.</p>
+      </details>
+      <details>
+        <summary><span class="q">Ist die Akupressur eine medizinische Behandlung?</span><span class="pm">+</span></summary>
+        <p>Nein. Die daoistische Akupressur ist eine energetische, entspannende Begleitung. Sie ersetzt keine ärztliche oder psychotherapeutische Behandlung und ist kein Heilversprechen.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section id="anfrage" class="final">
+    <div class="wrap reveal">
+      <svg class="ring-min" viewBox="0 0 60 60" aria-hidden="true"><circle cx="30" cy="30" r="25"/></svg>
+      <h2>10 Plätze. Damit Raum bleibt.</h2>
+      <p>Die Anmeldung öffnet am 1. September 2026. Schreib mir kurz, wer du bist und was dich zu dieser Woche zieht, ich melde mich persönlich mit allen Infos. Wenn du magst, sprechen wir vorab 20 Minuten, ruhig und unverbindlich.</p>
+      <a class="btn btn-gold" href="mailto:[deine@adresse.de]?subject=Retreat%20Eine%20Woche%20im%20Fluss%20%C2%B7%20Info%20anfragen" style="font-size:1.05rem;padding:1rem 2rem">Info anfragen <span class="arrow">&rarr;</span></a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <div class="brand" style="margin-bottom:.6rem">
+        <svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/></svg>
+        <span>Golden Chi mit Lisa Lee</span>
+      </div>
+      <p class="disclaimer">Tai Chi · Daoistische Heilarbeit. Die angebotene Begleitung dient der Entspannung und Praxis; sie ersetzt keine ärztliche Behandlung und stellt kein Heilversprechen dar.</p>
+    </div>
+    <div style="display:flex;gap:1.5rem">
+      <a href="index.html">Startseite</a>
+      <a href="#anfrage">Kontakt</a>
+      <a href="index.html#impressum">Impressum</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  },{threshold:.12, rootMargin:'0px 0px -8% 0px'});
+  document.querySelectorAll('.reveal, [data-timeline]').forEach(el=>io.observe(el));
+
+  // Bildergalerie / Lightbox (Platzhalter-Kacheln, bereit für echte Fotos)
+  const galleryData = [
+    {title:'Platzhalter-Bild', text:'Blick vom Hotel Panorama über den Lago di Lugano'},
+    {title:'Platzhalter-Bild', text:'Der Yoga-Saal (70 m²)'},
+    {title:'Platzhalter-Bild', text:'Einzelzimmer im Hotel Panorama'},
+    {title:'Platzhalter-Bild', text:'Terrasse & Seeblick'},
+    {title:'Platzhalter-Bild', text:'Gemeinsame Mahlzeiten'}
+  ];
+  const lightbox = document.getElementById('lightbox');
+  const lightboxContent = document.getElementById('lightboxContent');
+  let currentIndex = 0;
+
+  function renderLightbox(i){
+    currentIndex = (i + galleryData.length) % galleryData.length;
+    const item = galleryData[currentIndex];
+    lightboxContent.innerHTML = '<span class="ph" role="img" aria-label="'+item.title+': '+item.text+'"><span><strong>'+item.title+'</strong>'+item.text+'</span></span>';
+  }
+  function openLightbox(i){
+    renderLightbox(i);
+    lightbox.hidden = false;
+    document.body.style.overflow = 'hidden';
+    lightbox.querySelector('.lightbox-close').focus();
+  }
+  function closeLightbox(){
+    lightbox.hidden = true;
+    document.body.style.overflow = '';
+  }
+  document.querySelectorAll('.gallery-tile').forEach(tile=>{
+    tile.addEventListener('click', ()=> openLightbox(Number(tile.dataset.galleryIndex)));
+  });
+  lightbox.querySelector('.lightbox-close').addEventListener('click', closeLightbox);
+  lightbox.querySelector('.lightbox-prev').addEventListener('click', ()=> renderLightbox(currentIndex - 1));
+  lightbox.querySelector('.lightbox-next').addEventListener('click', ()=> renderLightbox(currentIndex + 1));
+  lightbox.addEventListener('click', (e)=>{ if(e.target === lightbox) closeLightbox(); });
+  document.addEventListener('keydown', (e)=>{
+    if(lightbox.hidden) return;
+    if(e.key === 'Escape') closeLightbox();
+    if(e.key === 'ArrowLeft') renderLightbox(currentIndex - 1);
+    if(e.key === 'ArrowRight') renderLightbox(currentIndex + 1);
+  });
+</script>
+</body>
+</html>
