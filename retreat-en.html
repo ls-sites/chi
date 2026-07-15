@@ -10,9 +10,13 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:title" content="A Week in Flow · Tai Chi Retreat in Ticino">
 <meta property="og:description" content="Six nights, seven days of Tai Chi and meditation above Lake Lugano. Oct 4–10, 2026, Hotel Panorama, Pugerna (Switzerland).">
-<meta property="og:image" content="images/thumbnail-en.png">
+<meta property="og:url" content="https://ls-sites.github.io/chi/retreat-en.html">
+<meta property="og:image" content="https://ls-sites.github.io/chi/images/thumbnail-en.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="images/thumbnail-en.png">
+<meta name="twitter:image" content="https://ls-sites.github.io/chi/images/thumbnail-en.png">
 <link rel="alternate" hreflang="de" href="retreat-de.html">
 <link rel="alternate" hreflang="en" href="retreat-en.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -86,6 +90,13 @@
   .lang-switch a:hover{color:var(--cream)}
   .lang-switch .lang-current{color:var(--gold)}
   .lang-switch .lang-sep{color:var(--line-d)}
+  @media(max-width:640px){
+    .bar .wrap{flex-direction:column;gap:.6rem;padding-block:.9rem}
+    .brand{font-size:.98rem;white-space:nowrap;gap:.5rem}
+    nav.links{flex-direction:column;gap:.6rem;width:100%}
+    .lang-switch{justify-content:center}
+    nav.links .btn{white-space:nowrap;font-size:.9rem;padding:.75rem 1.6rem}
+  }
 
   /* HERO */
   .hero{position:relative;overflow:hidden;text-align:center;padding-block:clamp(4rem,9vw,7rem) clamp(4.5rem,9vw,7rem);
