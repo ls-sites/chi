@@ -462,8 +462,8 @@
       </div>
       <div class="ort-media">
         <div class="gallery" role="group" aria-label="Bildergalerie Hotel Panorama">
-          <button type="button" class="gallery-tile gallery-tile--wide" data-gallery-index="0" aria-label="Bild vergrößern: Blick vom Hotel Panorama über den Lago di Lugano">
-            <img src="images/panorama.jpg" alt="Blick vom Hotel Panorama über den Lago di Lugano" loading="lazy">
+          <button type="button" class="gallery-tile gallery-tile--wide" data-gallery-index="0" aria-label="Bild vergrößern: Blick auf den Lago di Lugano">
+            <img src="images/luganer-see.jpg" alt="Blick auf den Lago di Lugano" loading="lazy">
           </button>
           <button type="button" class="gallery-tile" data-gallery-index="1" aria-label="Bild vergrößern: Der Yoga-Saal, 70 Quadratmeter">
             <img src="images/yoga-sala.jpg" alt="Der Yoga-Saal (70 m²)" loading="lazy">
@@ -476,6 +476,9 @@
           </button>
           <button type="button" class="gallery-tile" data-gallery-index="4" aria-label="Bild vergrößern: Gemeinsame Mahlzeiten">
             <img src="images/restaurant.jpg" alt="Gemeinsame Mahlzeiten" loading="lazy">
+          </button>
+          <button type="button" class="gallery-tile gallery-tile--wide" data-gallery-index="5" aria-label="Bild vergrößern: Blick vom Hotel Panorama über den Lago di Lugano">
+            <img src="images/panorama.jpg" alt="Blick vom Hotel Panorama über den Lago di Lugano" loading="lazy">
           </button>
         </div>
         <p class="gallery-hint">Klicken für die Großansicht.</p>
@@ -715,11 +718,12 @@
 
   // Bildergalerie / Lightbox
   const galleryData = [
-    {src:'images/panorama.jpg', alt:'Blick vom Hotel Panorama über den Lago di Lugano'},
+    {src:'images/luganer-see.jpg', alt:'Blick auf den Lago di Lugano'},
     {src:'images/yoga-sala.jpg', alt:'Der Yoga-Saal (70 m²)'},
     {src:'images/room.jpg', alt:'Einzelzimmer im Hotel Panorama'},
     {src:'images/hotel.jpg', alt:'Hotel Panorama'},
-    {src:'images/restaurant.jpg', alt:'Gemeinsame Mahlzeiten'}
+    {src:'images/restaurant.jpg', alt:'Gemeinsame Mahlzeiten'},
+    {src:'images/panorama.jpg', alt:'Blick vom Hotel Panorama über den Lago di Lugano'}
   ];
   const lightbox = document.getElementById('lightbox');
   const lightboxContent = document.getElementById('lightboxContent');
