@@ -7,6 +7,8 @@
 <meta name="supported-color-schemes" content="light">
 <meta name="robots" content="noindex">
 <title>Datenschutzerklärung · Golden Chi mit Lisa Lee</title>
+<link rel="alternate" hreflang="de" href="datenschutz.html">
+<link rel="alternate" hreflang="en" href="datenschutz-en.html">
 <style>
   @font-face{font-family:'Spectral';font-style:normal;font-weight:300;font-display:swap;src:url('fonts/spectral-latin-300-normal.woff2') format('woff2')}
   @font-face{font-family:'Spectral';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/spectral-latin-400-normal.woff2') format('woff2')}
@@ -25,6 +27,7 @@
   .wrap{max-width:780px;margin-inline:auto;padding-inline:clamp(1.25rem,5vw,2.5rem)}
   a{color:var(--jade)}
   a:hover{color:#244840}
+
   header.bar{border-bottom:1px solid var(--line);background:var(--mist)}
   .bar .wrap{max-width:1140px;display:flex;align-items:center;justify-content:space-between;padding-block:1rem}
   .brand{display:flex;align-items:center;gap:.7rem;font-family:"Spectral",serif;font-size:1.12rem;text-decoration:none;color:var(--jade)}
@@ -32,9 +35,11 @@
   .brand .glyph circle{fill:none;stroke:var(--dawn);stroke-width:2.4}
   .back{font-size:.92rem;color:var(--ink-soft);text-decoration:none}
   .back:hover{color:var(--ink)}
+
   main{padding-block:clamp(2.5rem,6vw,4.5rem)}
   h1{font-family:"Spectral",serif;font-weight:300;font-size:clamp(2rem,4vw,2.8rem);letter-spacing:-.01em;margin:0 0 .4rem}
-  h2{font-family:"Spectral",serif;font-weight:300;font-size:clamp(1.4rem,2.6vw,1.9rem);margin:2.6rem 0 .8rem;padding-top:1.6rem;border-top:1px solid var(--line)}
+  h2{font-family:"Spectral",serif;font-weight:300;font-size:clamp(1.4rem,2.6vw,1.9rem);margin:2.8rem 0 .8rem;padding-top:1.6rem;border-top:1px solid var(--line)}
+  h3{font-family:"Hanken Grotesk",sans-serif;font-weight:600;font-size:1rem;letter-spacing:.01em;margin:1.6rem 0 .3rem}
   p{margin:.6rem 0}
   .eyebrow{font-size:.72rem;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--jade);margin:0 0 1.4rem}
   .muted{color:var(--ink-soft)}
@@ -42,9 +47,16 @@
   .note{background:var(--mist-2);border:1px solid var(--line);border-left:3px solid var(--dawn);border-radius:10px;
     padding:1rem 1.2rem;margin:1.5rem 0;font-size:.95rem;color:var(--ink-soft)}
   ul{padding-left:1.2rem;display:grid;gap:.35rem;margin:.6rem 0}
+  .toc{display:flex;gap:1.5rem;flex-wrap:wrap;font-size:.95rem;margin:1.4rem 0 0}
+
   footer{border-top:1px solid var(--line);padding-block:2rem;font-size:.85rem;color:var(--ink-faint)}
   footer .wrap{max-width:1140px;display:flex;gap:1rem 1.5rem;flex-wrap:wrap;justify-content:space-between}
   footer a{color:var(--ink-soft);text-decoration:none}
+  .bar-right{display:flex;align-items:center;gap:1.4rem}
+  .lang{font-size:.8rem;font-weight:600;letter-spacing:.03em}
+  .lang a{text-decoration:none;color:var(--ink-faint)}
+  .lang a.is-current,.lang a:hover{color:var(--jade)}
+  .lang .sep{color:var(--ink-faint);opacity:.5;margin:0 .35rem}
   :focus-visible{outline:2px solid var(--jade);outline-offset:3px;border-radius:4px}
 </style>
 </head>
@@ -52,11 +64,14 @@
 
 <header class="bar">
   <div class="wrap">
-    <a class="brand" href="index.html" aria-label="Zur Startseite">
+    <a class="brand" href="index.html" aria-label="Startseite">
       <svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/></svg>
       <span>Golden Chi mit Lisa Lee</span>
     </a>
-    <a class="back" href="index.html">&larr; Zur Startseite</a>
+    <div class="bar-right">
+      <span class="lang"><a href="datenschutz.html" class="is-current">DE</a><span class="sep">|</span><a href="datenschutz-en.html">EN</a></span>
+      <a class="back" href="index.html">&larr; Zur Startseite</a>
+    </div>
   </div>
 </header>
 
@@ -65,7 +80,7 @@
 
     <p class="eyebrow">Rechtliches</p>
     <h1>Datenschutzerklärung</h1>
-    <p class="muted">Stand: [Monat Jahr]. Diese Erklärung informiert über Art, Umfang und Zweck der Verarbeitung personenbezogener Daten auf dieser Website.</p>
+    <p class="muted">Stand: September 2026. Diese Erklärung informiert über Art, Umfang und Zweck der Verarbeitung personenbezogener Daten auf dieser Website.</p>
 
     <div class="note">Vorlage: Diese Datenschutzerklärung ist eine sorgfältig erstellte Grundlage, ersetzt aber keine Rechtsberatung. Bitte fülle die Platzhalter in [eckigen Klammern] aus und lass den Text vor Veröffentlichung fachkundig prüfen.</div>
 
@@ -73,8 +88,8 @@
     <p>Verantwortlich im Sinne der Datenschutz-Grundverordnung (DSGVO) ist:</p>
     <address class="addr">
       [Vorname Nachname]<br>
-      [Straße und Hausnummer], [PLZ und Ort], [Land]<br>
-      E-Mail: <a href="mailto:[deine@adresse.de]">[deine@adresse.de]</a>
+      [Straße und Hausnummer], [PLZ und Ort], Deutschland<br>
+      E-Mail: <a href="mailto:goldenchibylisalee@gmail.com">goldenchibylisalee@gmail.com</a>
     </address>
 
     <h2>2. Hosting (GitHub Pages)</h2>
@@ -84,10 +99,10 @@
     <p class="muted">Die verwendeten Schriftarten werden lokal von diesem Server ausgeliefert. Es findet keine Verbindung zu Servern Dritter (etwa Google Fonts) statt, und es werden hierfür keine personenbezogenen Daten an Dritte übertragen.</p>
 
     <h2>4. Kontaktaufnahme</h2>
-    <p class="muted">Wenn du per E-Mail Kontakt aufnimmst, werden die übermittelten Angaben (z. B. Name, E-Mail-Adresse, Inhalt der Nachricht) zur Bearbeitung der Anfrage und für mögliche Anschlussfragen gespeichert. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (Anbahnung oder Erfüllung eines Vertrags) bzw. Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Beantwortung). Die Daten werden gelöscht, sobald sie nicht mehr erforderlich sind und keine gesetzlichen Aufbewahrungspflichten entgegenstehen.</p>
+    <p class="muted">Wenn du per E-Mail oder WhatsApp Kontakt aufnimmst, werden die übermittelten Angaben (z. B. Name, E-Mail-Adresse oder Telefonnummer, Inhalt der Nachricht) zur Bearbeitung der Anfrage und für mögliche Anschlussfragen gespeichert. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (Anbahnung oder Erfüllung eines Vertrags) bzw. Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Beantwortung). Bei WhatsApp gelten zusätzlich die Datenschutzbestimmungen der WhatsApp Ireland Ltd. Die Daten werden gelöscht, sobald sie nicht mehr erforderlich sind und keine gesetzlichen Aufbewahrungspflichten entgegenstehen.</p>
 
-    <h2>5. Externe Links und eingebettete Medien</h2>
-    <p class="muted">Im Fußbereich befinden sich Verweise auf YouTube, Instagram und WhatsApp. Es handelt sich um einfache Links: Erst durch Anklicken verlässt du diese Website und wirst zum jeweiligen Dienst weitergeleitet, dessen Datenschutzbestimmungen dann gelten. Es werden keine Inhalte dieser Dienste eingebettet und keine Daten an sie übertragen, solange die Links nicht angeklickt werden. Das auf der Startseite gezeigte Video wird lokal von diesem Server geladen; es besteht keine Verbindung zu einem Videoportal.</p>
+    <h2>5. Externe Links und Medien</h2>
+    <p class="muted">Diese Website enthält Links zu YouTube, Instagram, WhatsApp sowie zu den Websites der Yogastudios Yoga Palais Erfurt und Ekatra Erfurt. Es handelt sich um einfache Links: Erst durch Anklicken verlässt du diese Website und wirst zum jeweiligen Dienst weitergeleitet, dessen Datenschutzbestimmungen dann gelten. Es werden keine Inhalte dieser Dienste eingebettet und keine Daten an sie übertragen, solange die Links nicht angeklickt werden. Die auf der Startseite gezeigten Videos und Bilder werden lokal von diesem Server geladen; es besteht keine Verbindung zu einem Videoportal.</p>
 
     <h2>6. Cookies, Analyse und Tracking</h2>
     <p class="muted">Diese Website setzt keine Cookies zu Analyse- oder Marketingzwecken, verwendet keine Webanalyse-Dienste und kein Tracking.</p>
@@ -109,8 +124,6 @@
 
     <h2>9. Widerruf erteilter Einwilligungen</h2>
     <p class="muted">Eine bereits erteilte Einwilligung kannst du jederzeit mit Wirkung für die Zukunft widerrufen. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Verarbeitung bleibt davon unberührt.</p>
-
-    <div class="note" style="margin-top:2.5rem">Hinweis: GitHub Pages erlaubt es derzeit nicht, selbst einen Auftragsverarbeitungsvertrag (AVV) abzuschließen. Wenn dir das wichtig ist, prüfe alternativ ein in der EU gehostetes Static-Hosting mit AVV-Angebot.</div>
 
   </div>
 </main>
