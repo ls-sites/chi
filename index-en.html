@@ -5,12 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="color-scheme" content="light">
 <meta name="supported-color-schemes" content="light">
-<title>Golden Chi with Lisa Lee: Back to Your Own Rhythm | Tai Chi, Chi Gong & Daoist Bodywork</title>
-<meta name="description" content="Guidance for people who want out of the rush. Tai Chi, Chi Gong, and Daoist bodywork: a practice you live. Online and in person between Europe and Bali.">
+<title>Golden Chi with Lisa Lee: Tai Chi, Chi Gong &amp; Daoist Bodywork in Erfurt</title>
+<meta name="description" content="Tai Chi and Chi Gong in Erfurt, Germany: weekly classes at Yoga Palais and Ekatra, plus Daoist bodywork in private sessions, in person and online.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
-<meta property="og:title" content="Golden Chi with Lisa Lee: Back to Your Own Rhythm">
-<meta property="og:description" content="Guidance for people who want out of the rush. Tai Chi, Chi Gong, and Daoist bodywork: a practice you live. Online and in person between Europe and Bali.">
+<meta property="og:title" content="Golden Chi with Lisa Lee: Tai Chi &amp; Chi Gong in Erfurt">
+<meta property="og:description" content="Tai Chi and Chi Gong in Erfurt, Germany: weekly classes at Yoga Palais and Ekatra, plus Daoist bodywork in private sessions, in person and online.">
 <meta property="og:url" content="https://ls-sites.github.io/chi/index-en.html">
 <meta property="og:image" content="https://ls-sites.github.io/chi/images/thumbnail-home-en.png">
 <meta property="og:image:width" content="1200">
@@ -20,9 +20,16 @@
 <meta name="twitter:image" content="https://ls-sites.github.io/chi/images/thumbnail-home-en.png">
 <link rel="alternate" hreflang="de" href="index.html">
 <link rel="alternate" hreflang="en" href="index-en.html">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  @font-face{font-family:"Spectral";font-style:normal;font-weight:300;font-display:swap;src:url("fonts/spectral-latin-300-normal.woff2") format("woff2")}
+  @font-face{font-family:"Spectral";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/spectral-latin-400-normal.woff2") format("woff2")}
+  @font-face{font-family:"Spectral";font-style:normal;font-weight:500;font-display:swap;src:url("fonts/spectral-latin-500-normal.woff2") format("woff2")}
+  @font-face{font-family:"Spectral";font-style:italic;font-weight:300;font-display:swap;src:url("fonts/spectral-latin-300-italic.woff2") format("woff2")}
+  @font-face{font-family:"Spectral";font-style:italic;font-weight:400;font-display:swap;src:url("fonts/spectral-latin-400-italic.woff2") format("woff2")}
+  @font-face{font-family:"Hanken Grotesk";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/hanken-grotesk-latin-400-normal.woff2") format("woff2")}
+  @font-face{font-family:"Hanken Grotesk";font-style:normal;font-weight:500;font-display:swap;src:url("fonts/hanken-grotesk-latin-500-normal.woff2") format("woff2")}
+  @font-face{font-family:"Hanken Grotesk";font-style:normal;font-weight:600;font-display:swap;src:url("fonts/hanken-grotesk-latin-600-normal.woff2") format("woff2")}
+</style>
 <style>
   :root{
     color-scheme: light only;
@@ -143,6 +150,28 @@
   .recog .turn br{display:none}
   @media(min-width:600px){.recog .turn br{display:inline}}
 
+  /* RECOGNITION: centered, points in a row, statement below */
+  .recog-b{text-align:center}
+  .recog-b .kicker{margin:0 auto 2rem;max-width:none}
+  .recog-b .points-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;text-align:left;counter-reset:pt}
+  @media(max-width:900px){.recog-b .points-row{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:520px){.recog-b .points-row{grid-template-columns:1fr}}
+  .recog-b .points-row p{margin:0;max-width:none;padding-top:1rem;border-top:2px solid var(--jade-2);font-size:1.05rem;line-height:1.45;color:var(--ink);counter-increment:pt}
+  .recog-b .points-row p::before{content:"0" counter(pt);display:block;font-family:"Spectral",serif;font-size:.95rem;color:var(--dawn);margin-bottom:.5rem;letter-spacing:.05em}
+  .recog-b .enso{margin:clamp(2.4rem,5vw,3.6rem) auto 1.6rem;width:clamp(72px,9vw,100px)}
+  .recog-b .stmt{max-width:34ch;margin:0 auto}
+  .recog-b .stmt .l1{font-family:"Spectral",serif;font-size:clamp(1.1rem,1.6vw,1.3rem);color:var(--ink-soft);margin:0 auto .3rem;max-width:none}
+  .recog-b .stmt .l2{font-family:"Spectral",serif;font-weight:300;font-size:clamp(1.8rem,3.6vw,2.8rem);line-height:1.15;color:var(--jade);margin:0 auto 1rem;max-width:none}
+  .recog-b .bottom{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;align-items:center;margin-top:clamp(2.8rem,6vw,4.2rem)}
+  .recog-b .bottom .enso{grid-column:1/3;justify-self:center;margin:0;width:clamp(120px,15vw,190px)}
+  .recog-b .bottom .stmt{grid-column:3/5;justify-self:start;max-width:none;margin:0;text-align:left}
+  @media(max-width:900px){.recog-b .bottom{grid-template-columns:repeat(2,1fr)}.recog-b .bottom .enso{grid-column:1}.recog-b .bottom .stmt{grid-column:2}}
+  .recog-b .bottom .stmt p{margin-left:0;margin-right:0}
+  .recog-b .bottom .stmt .l1{line-height:1.35;margin-bottom:.7rem}
+  .recog-b .bottom .stmt .l3{line-height:1.55}
+  @media(max-width:600px){.recog-b .bottom{grid-template-columns:1fr;gap:1.6rem}.recog-b .bottom .enso,.recog-b .bottom .stmt{grid-column:1}.recog-b .bottom .stmt{justify-self:center;text-align:center}}
+  .recog-b .stmt .l3{font-size:1.05rem;color:var(--ink-soft);margin:0 auto;max-width:44ch}
+
   /* HALTUNG */
   .haltung{background:var(--jade-deep);color:#E7E9E2}
   .haltung .kicker{color:var(--dawn-2)}
@@ -181,36 +210,56 @@
   .dot{width:9px;height:9px;border-radius:50%;border:0;padding:0;background:rgba(245,246,241,.35);cursor:pointer;transition:.2s ease}
   .dot.is-active{background:var(--dawn);transform:scale(1.25)}
 
-  /* OFFERS */
-  .offer-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem;align-items:stretch}
-  @media(max-width:920px){.offer-grid{grid-template-columns:1fr;max-width:520px;margin-inline:auto}}
-  .card{display:flex;flex-direction:column;background:var(--mist-2);border:1px solid var(--line);border-radius:18px;padding:2rem 1.8rem;transition:.3s ease}
-  .card:hover{transform:translateY(-4px);box-shadow:0 22px 50px -28px rgba(25,28,24,.4);border-color:var(--jade-2)}
-  .card.feature:hover{border-color:var(--jade-2)}
-  .card.feature{background:var(--jade-deep);border-color:var(--jade-deep)}
-  .card.feature *{color:#E7E9E2}
-  .card.feature .o-price b{color:#F1F2EC}
-  .card.feature .o-tag{color:var(--dawn-2);border-color:rgba(230,197,126,.4)}
-  .card.feature .incl li::before{box-shadow:inset 0 0 0 1.5px var(--dawn-2)}
-  .card.feature .btn-ghost{border-color:rgba(230,197,126,.55);color:var(--dawn-2)}
-  .card.feature .btn-ghost:hover{background:var(--dawn-2);border-color:var(--dawn-2);color:#1d2017}
-  .offers .card:not(.feature) .btn-ghost{color:var(--jade);border-color:rgba(47,92,80,.45)}
-  .offers .card:not(.feature) .btn-ghost:hover{background:var(--jade);color:var(--mist-2);border-color:var(--jade)}
-  .o-tag{align-self:flex-start;font-size:.68rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--jade);border:1px solid rgba(47,92,80,.3);border-radius:999px;padding:.3rem .7rem;margin-bottom:1.3rem}
-  .card h3{font-size:1.55rem;font-weight:400;margin:0 0 .5rem}
-  .o-for{font-size:.95rem;color:var(--ink-soft);margin:0 0 1.4rem}
-  .card.feature .o-for{color:#B6BBB0}
-  .incl{list-style:none;padding:0;margin:0 0 1.6rem;display:grid;gap:.7rem}
-  .incl li{position:relative;padding-left:1.5rem;font-size:.96rem;line-height:1.5;color:var(--ink-soft)}
-  .card.feature .incl li{color:#C4C9BF}
-  .incl li::before{content:"";position:absolute;left:0;top:.62em;width:7px;height:7px;border-radius:50%;box-shadow:inset 0 0 0 1.5px var(--jade)}
-  .o-price{margin-top:auto;padding-top:1.4rem;border-top:1px solid var(--line)}
-  .card.feature .o-price{border-color:rgba(231,233,226,.18)}
-  .o-price b{font-family:"Spectral",serif;font-weight:400;font-size:2rem;color:var(--ink)}
-  .o-price .per{font-size:.95rem;color:var(--ink-faint)}
-  .o-price small{display:block;font-size:.82rem;color:var(--ink-faint);margin:.25rem 0 1.3rem}
-  .card.feature .o-price small{color:#9AA095}
-  .offer-note{margin:2.4rem auto 0;max-width:50ch;text-align:center;font-size:.96rem;color:var(--ink-soft)}
+  /* SESSIONS (bookable, one row per Cal.com event type) */
+  .sessions{border-top:1px solid var(--line);max-width:900px}
+  .session{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:1rem 2.5rem;align-items:center;padding:1.6rem 0;border-bottom:1px solid var(--line)}
+  .session h3{font-size:1.4rem;font-weight:400;color:var(--jade);margin:0 0 .2rem}
+  .session .meta{font-size:.78rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint);margin:0}
+  .session .desc{font-size:1rem;color:var(--ink-soft);margin:.55rem 0 0;max-width:52ch}
+  .session .side{display:flex;flex-direction:column;align-items:flex-end;gap:.7rem}
+  .session .price{font-family:"Spectral",serif;font-size:1.55rem;color:var(--ink);line-height:1}
+  .session .price small{font-family:"Hanken Grotesk",sans-serif;font-size:.85rem;color:var(--ink-faint)}
+  .session .btn-ghost{color:var(--jade);border-color:rgba(47,92,80,.45);white-space:nowrap}
+  .session .btn-ghost:hover{background:var(--jade);color:var(--mist-2);border-color:var(--jade)}
+  @media(max-width:640px){.session{grid-template-columns:1fr}.session .side{align-items:flex-start}}
+  .sessions-note{font-size:.92rem;color:var(--ink-faint);margin:1.4rem 0 0}
+
+  /* WAITLIST BAND (full width) */
+  .waitlist{background:linear-gradient(120deg,var(--jade),var(--jade-deep));color:#E7E9E2;padding-block:clamp(2.4rem,5vw,3.6rem)}
+  .waitlist .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1.6rem 3rem}
+  .waitlist .kicker{color:var(--dawn-2);margin-bottom:.8rem}
+  .waitlist h2{font-size:clamp(1.5rem,2.6vw,2.05rem);color:#F4F5F0;margin:0 0 .6rem}
+  .waitlist p{color:#C4CEC8;margin:0;max-width:52ch}
+  .waitlist .btn{background:var(--dawn-2);color:#1d2017;flex:none}
+  .waitlist .btn:hover{background:#F0D494}
+
+  /* RETREATS placeholder */
+  .retreats-box{position:relative;overflow:hidden;isolation:isolate;border-radius:18px;padding:clamp(2.2rem,5vw,3.6rem);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1.4rem 3rem;background:var(--jade-deep);color:#F4F5F0}
+  .retreats-box .bg-video{position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover}
+  .retreats-box .bg-scrim{position:absolute;inset:0;z-index:-1;background:linear-gradient(100deg,rgba(23,44,38,.86) 0%,rgba(23,44,38,.72) 55%,rgba(23,44,38,.6) 100%)}
+  .retreats-box .kicker{margin-bottom:.8rem;color:var(--dawn-2)}
+  .retreats-box h2{margin:0 0 .6rem;color:#F4F5F0}
+  .retreats-box p{margin:0;color:rgba(244,245,240,.86);max-width:52ch}
+  .retreats-box .btn-ghost{color:#F4F5F0;border-color:rgba(244,245,240,.55);flex:none;backdrop-filter:blur(4px)}
+  .retreats-box .btn-ghost:hover{background:var(--dawn-2);border-color:var(--dawn-2);color:#1d2017}
+
+  /* COURSES (in-person, Erfurt) */
+  .course-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.3rem;align-items:stretch}
+  @media(max-width:760px){.course-grid{grid-template-columns:1fr;max-width:520px;margin-inline:auto}}
+  .course{display:flex;flex-direction:column;background:var(--mist-2);border:1px solid var(--line);border-radius:18px;overflow:hidden;transition:.3s ease}
+  .course:hover{transform:translateY(-4px);box-shadow:0 22px 50px -28px rgba(25,28,24,.4);border-color:var(--jade-2)}
+  .course img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;background:#cfd6cb}
+  .course-body{display:flex;flex-direction:column;flex:1;padding:1.6rem 1.8rem 1.8rem}
+  .course .o-tag{margin-bottom:1rem}
+  .course .when{font-family:"Spectral",serif;font-weight:400;font-size:clamp(1.6rem,2.4vw,1.95rem);line-height:1.15;color:var(--ink);margin:0}
+  .course h3{font-size:1.3rem;font-weight:400;color:var(--jade);margin:.55rem 0 .15rem}
+  .course .where{font-size:.95rem;color:var(--ink-soft);margin:0 0 1.4rem}
+  .course .btn{margin-top:auto;align-self:flex-start;color:var(--jade);border-color:rgba(47,92,80,.45)}
+  .course .btn:hover{background:var(--jade);color:var(--mist-2);border-color:var(--jade)}
+  .courses-note{margin:2rem auto 0;max-width:52ch;text-align:center;font-size:.96rem;color:var(--ink-soft)}
+
+  #praxis{background:var(--mist-2);border-block:1px solid var(--line)}
+  .about .pull{color:var(--ink);font-size:clamp(1.05rem,1.6vw,1.3rem);margin-top:1.8rem}
 
   /* ABOUT */
   .about{background:linear-gradient(180deg,#DCE7DF,#CFDED6);border-block:1px solid var(--line)}
@@ -280,7 +329,8 @@
     </a>
     <nav class="links" aria-label="Main navigation">
       <a class="hide-sm" href="#praxis">Practice</a>
-      <a class="hide-sm" href="#wege">Offerings</a>
+      <a class="hide-sm" href="#kurse">Classes</a>
+      <a class="hide-sm" href="#wege">Sessions</a>
       <a class="hide-sm" href="#ich">About Me</a>
       <div class="lang-switch" aria-label="Choose language">
         <a href="index.html">DE</a><span class="sep">|</span><a href="index-en.html" class="is-current">EN</a>
@@ -302,53 +352,38 @@
       <div class="hero-inner">
         <p class="kicker">Tai Chi · Chi Gong · Daoist Bodywork</p>
         <h1>Back to your own rhythm.</h1>
-        <p class="lead">I guide people who want out of the rush, into their own stillness, into the power of simplicity.</p>
+        <p class="lead">Slow movement, calm breath, attentive touch. I teach Tai Chi and Chi Gong in Erfurt and offer private sessions.</p>
         <div class="hero-cta">
-          <a class="btn btn-primary" href="#gespraech">A First Conversation <span class="arrow">&rarr;</span></a>
-          <a class="btn btn-ghost" href="#wege">View the Offerings</a>
+          <a class="btn btn-primary" href="#kurse">See the Classes <span class="arrow">&rarr;</span></a>
+          <a class="btn btn-ghost" href="#gespraech">A First Conversation</a>
         </div>
-        <p class="hero-note">Online and in person, between Europe and Bali. No experience needed.</p>
+        <p class="hero-note">Every week at Yoga Palais and Ekatra in Erfurt. No experience needed.</p>
       </div>
     </div>
   </section>
 
   <!-- RECOGNITION -->
-  <section class="recog">
-    <div class="wrap split reveal">
-      <div class="split-l">
-        <p class="kicker">Maybe you know this</p>
-        <div class="points">
-          <p>You've optimized enough.</p>
-          <p>More productivity doesn't nourish you.</p>
-          <p>Another app, another self-help book, and still empty.</p>
-          <p>A tiredness you wouldn't call burnout.</p>
-        </div>
+  <section class="recog-b">
+    <div class="wrap reveal">
+      <p class="kicker">Maybe you know this</p>
+      <div class="points-row">
+          <p>Everyday life moves fast, and your body can barely keep up.</p>
+          <p>You sit a lot each day and long for movement that feels good.</p>
+          <p>You want to slow down and still feel fully awake and alive.</p>
+          <p>You're looking for a practice you can keep for life, at any age.</p>
       </div>
-      <div class="split-r">
+      <div class="bottom">
         <div class="enso" aria-hidden="true">
           <svg viewBox="0 0 320 320">
             <path class="ring" d="M232 70 C292 108 300 196 246 248 C190 302 96 298 50 244 C8 194 20 104 86 66 C150 30 232 38 268 96"/>
           </svg>
           <div class="qi"><span class="dot"></span></div>
         </div>
-        <p class="turn">What you need is a living practice, one you simply live:<br>
-          back into the body, into the breath,<br>
-          into the stillness that's already there.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- HALTUNG -->
-  <section class="haltung">
-    <div class="wrap split reveal">
-      <div class="split-l">
-        <p class="kicker">Not a method. A way of being.</p>
-        <h2>I teach how I live.</h2>
-      </div>
-      <div class="split-r">
-        <p>I'm not a wellness coach or a spiritual influencer. I'm a companion on the path, in the Daoist sense. What I share isn't a collection of exercises, but a way of being: the unity of teaching and life.</p>
-        <p>Freedom only shows itself in how someone lives. I travel light, practice daily, and work from wherever I happen to be. That's the ground everything else stands on.</p>
-        <p class="pull">"The soft overcomes the hard. Stillness moves more than haste."</p>
+        <div class="stmt">
+          <p class="l1">Higher, faster, further<br>is familiar.</p>
+          <p class="l2">Here it goes<br>deeper, slower,<br>more relaxed.</p>
+          <p class="l3">Back into the body, into the breath,<br>and into a calm that gives you strength.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -359,25 +394,59 @@
       <div class="sec-head">
         <p class="kicker">The Practice</p>
         <h2 class="h2-sm">Three paths, one flow: movement, breath, touch.</h2>
-        <p class="sec-intro">Three practice forms, one principle: do less, be more present. It's enough to show up and move with it.</p>
+        <p class="sec-intro">Three practice forms, one principle: do less, be more present. It's enough to be there and join in.</p>
       </div>
       <div class="practice-grid">
         <div class="practice">
           <h3>Tai Chi</h3>
           <p class="zh">太极 · moving stillness</p>
-          <p>Slow, continuous movement in which body and mind come to rest: a walk at your own pace, with no pressure to perform.</p>
+          <p>Slow, flowing movements in which body and mind come to rest. You practice at your own pace, with no pressure to perform.</p>
         </div>
         <div class="practice">
           <h3>Chi Gong</h3>
           <p class="zh">气功 · breath &amp; strength</p>
-          <p>Simple exercises that open the breath and let energy flow again. What feels heavy and tired becomes permeable again.</p>
+          <p>Simple exercises that open the breath and let energy flow again. What feels heavy and tired becomes light and mobile again.</p>
         </div>
         <div class="practice">
-          <h3>Daoist Acupressure</h3>
-          <p class="zh">点穴 · bodywork</p>
-          <p>Gentle work on the body's points and pathways. Deep relaxation, release of what's held, a coming home within your own system.</p>
+          <h3>Daoist Bodywork</h3>
+          <p class="zh">点穴 · acupressure</p>
+          <p>Gentle work on the body's points and pathways. Deep relaxation, release of what's held, a sense of arriving in your own body.</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- CLASSES (in person, Erfurt) -->
+  <section id="kurse">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="kicker">Current Classes</p>
+        <h2 class="h2-sm">Every week, in person in Erfurt.</h2>
+        <p class="sec-intro">Tai Chi and Chi Gong at two yoga studios in Erfurt, Germany. Just come along, no experience needed.</p>
+      </div>
+      <div class="course-grid">
+        <article class="course reveal">
+          <img style="object-position:center top" src="images/yoga-palais-erfurt.jpg" alt="Practice room at Yoga Palais Erfurt" loading="lazy" width="680" height="510">
+          <div class="course-body">
+            <span class="o-tag">Every Wednesday</span>
+            <p class="when">4:00 – 5:00 pm</p>
+            <h3>Yoga Palais Erfurt</h3>
+            <p class="where">Tai Chi &amp; Chi Gong · in person in Erfurt</p>
+            <a class="btn btn-ghost" href="https://www.yoga-palais.de/" target="_blank" rel="noopener">Visit the Studio <span class="arrow">&rarr;</span></a>
+          </div>
+        </article>
+        <article class="course reveal">
+          <img src="images/ekatra-erfurt.jpg" alt="Practice room at Ekatra Erfurt" loading="lazy" width="680" height="453">
+          <div class="course-body">
+            <span class="o-tag">Every Friday</span>
+            <p class="when">3:00 – 4:15 pm</p>
+            <h3>Ekatra Erfurt</h3>
+            <p class="where">Tai Chi &amp; Chi Gong · in person in Erfurt</p>
+            <a class="btn btn-ghost" href="https://www.ekatra.de/" target="_blank" rel="noopener">Visit the Studio <span class="arrow">&rarr;</span></a>
+          </div>
+        </article>
+      </div>
+      <p class="courses-note reveal">Registration and prices directly through each studio.</p>
     </div>
   </section>
 
@@ -425,69 +494,51 @@
     </div>
   </section>
 
-  <!-- OFFERS -->
-  <section id="wege" class="offers">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <p class="kicker">Paths to walk together</p>
-        <h2 class="h2-sm">Three depths. Choose by where you are right now.</h2>
-        <p class="sec-intro">Three offerings, each with its own depth and commitment. Choose the one that fits you right now.</p>
+  <!-- SESSIONS -->
+  <!-- BOOKING: Once Cal.com is set up, replace the href of every link with data-book with the matching Cal.com link (one event type per row). -->
+  <section id="wege">
+    <div class="wrap reveal">
+      <div class="sec-head">
+        <p class="kicker">Private Sessions</p>
+        <h2 class="h2-sm">A session just for you.</h2>
+        <p class="sec-intro">In person in Erfurt or online. Choose what fits right now and book your time.</p>
       </div>
-
-      <div class="offer-grid">
-        <article class="card reveal">
-          <span class="o-tag">Begin</span>
-          <h3>The Shared Morning</h3>
-          <p class="o-for">For anyone looking for a calm, regular practice: location independent, even on the road.</p>
-          <ul class="incl">
-            <li>Weekly live practice online (Tai Chi &amp; Chi Gong), approx. 45 min.</li>
-            <li>Monthly Daoist reflection as text or audio</li>
-            <li>Recordings to follow along at your own pace</li>
-            <li>A small, quiet group instead of a crowd</li>
-          </ul>
-          <div class="o-price">
-            <b>€39</b><span class="per"> / month</span>
-            <small>Suggested range €35–45 · cancel anytime</small>
-            <a class="btn btn-ghost" href="#gespraech" style="width:100%;justify-content:center">Join In</a>
+      <div class="sessions">
+        <article class="session">
+          <div>
+            <h3>Daoist Bodywork</h3>
+            <p class="meta">90 min. · in person in Erfurt</p>
+            <p class="desc">Gentle work on the body's points and pathways, tailored to what you need right now.</p>
+          </div>
+          <div class="side">
+            <span class="price">€95</span>
+            <a class="btn btn-ghost" data-book href="mailto:goldenchibylisalee@gmail.com?subject=Booking%20Daoist%20Bodywork">Book a Time <span class="arrow">&rarr;</span></a>
           </div>
         </article>
-
-        <article class="card feature reveal">
-          <span class="o-tag">Deepen</span>
-          <h3>Back into the Flow</h3>
-          <p class="o-for">Personal guidance over three months, for a transition that needs depth.</p>
-          <ul class="incl">
-            <li>1:1 guidance, practice built around your rhythm</li>
-            <li>Daoist bodywork, guided online and in person when our paths cross</li>
-            <li>Regular conversations, reachable in between</li>
-            <li>Not an off-the-shelf program, but your own path</li>
-          </ul>
-          <div class="o-price">
-            <b>€890</b><span class="per"> / 3 months</span>
-            <small>Suggested range €790–990 · payment plans available</small>
-            <a class="btn btn-ghost" href="#gespraech" style="width:100%;justify-content:center">Get in Touch</a>
+        <article class="session">
+          <div>
+            <h3>Online Session</h3>
+            <p class="meta">Tai Chi &amp; Chi Gong · 1:1 online</p>
+            <p class="desc">Personal practice by video, from wherever you are.</p>
+          </div>
+          <div class="side">
+            <span class="price"><small>price on request</small></span>
+            <a class="btn btn-ghost" data-book href="mailto:goldenchibylisalee@gmail.com?subject=Booking%20Online%20Session">Book a Time <span class="arrow">&rarr;</span></a>
           </div>
         </article>
-
-        <article class="card reveal">
-          <span class="o-tag">Immerse</span>
-          <h3>A Week in Flow</h3>
-          <p class="o-for">Tai Chi retreat in Ticino, Oct 4–10, 2026, Hotel Panorama above Lake Lugano.</p>
-          <ul class="incl">
-            <li>6 days of practice: Tai Chi, Chi Gong, meditation, hiking, stillness</li>
-            <li>Small group, 8–10 people</li>
-            <li>Accommodation (single/double) and organic meals included</li>
-            <li>Mindful pauses between sessions</li>
-          </ul>
-          <div class="o-price">
-            <b>€1,500</b>
-            <small>all inclusive · limited spots</small>
-            <a class="btn btn-ghost" href="retreat-en.html" style="width:100%;justify-content:center">View the Retreat</a>
+        <article class="session">
+          <div>
+            <h3>Intro Call</h3>
+            <p class="meta">approx. 20 min. · online</p>
+            <p class="desc">A first conversation to feel out whether it's a fit and what you need.</p>
+          </div>
+          <div class="side">
+            <span class="price"><small>free</small></span>
+            <a class="btn btn-ghost" data-book href="mailto:goldenchibylisalee@gmail.com?subject=Intro%20Call">Book a Time <span class="arrow">&rarr;</span></a>
           </div>
         </article>
       </div>
-
-      <p class="offer-note reveal">If the price is tight right now, reach out. There's flexibility for some situations, because what matters most is that it's right for you.</p>
+      <p class="sessions-note">If the price is tight right now, reach out. There's flexibility for some situations.</p>
     </div>
   </section>
 
@@ -498,10 +549,41 @@
         <div class="portrait" role="img" aria-label="Lisa Lee"></div>
         <div>
           <p class="kicker">About Me</p>
-          <h2>I don't teach freedom.<br>I live it.</h2>
-          <p class="muted">I'm from Germany and live nomadically, moving between Europe and Bali. Tai Chi, Chi Gong, and Daoist bodywork are simply how I live.</p>
-          <p class="muted">People follow me because I embody something: a groundedness that travels with me anywhere, and a calm that only comes through practice. That's exactly what I pass on, simply, from person to person.</p>
+          <h2>I teach how I live.</h2>
+          <p class="muted">I'm Lisa, and I teach Tai Chi and Chi Gong in and around Erfurt. Daoist practice is how I live: slowly, attentively, and close to nature.</p>
+          <p class="muted">My classes and sessions are about rest and reconnection with your body, your breath, and nature. That's why I love working with others, with yoga studios in Erfurt and on shared days outdoors.</p>
+          <p class="pull">"The soft overcomes the hard. Stillness moves more than haste."</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WAITLIST: online course in preparation -->
+  <section class="waitlist" id="online">
+    <div class="wrap reveal">
+      <div>
+        <p class="kicker">In preparation</p>
+        <h2>An online course for practicing at home.</h2>
+        <p>Tai Chi and Chi Gong at your own pace, no experience needed. Join the waitlist and you'll get an email as soon as it launches.</p>
+      </div>
+      <a class="btn" href="mailto:goldenchibylisalee@gmail.com?subject=Waitlist%20Online%20Course">Join the Waitlist <span class="arrow">&rarr;</span></a>
+    </div>
+  </section>
+
+  <!-- RETREATS: placeholder. Add the next retreat (e.g. New Year's) here once confirmed. -->
+  <section id="retreats">
+    <div class="wrap reveal">
+      <div class="retreats-box">
+        <video class="bg-video" autoplay muted loop playsinline preload="metadata" aria-hidden="true">
+          <source src="images/349489_tiny.mp4" type="video/mp4">
+        </video>
+        <div class="bg-scrim" aria-hidden="true"></div>
+        <div>
+          <p class="kicker">Upcoming Retreats</p>
+          <h2 class="h2-sm">The next retreats will be announced soon.</h2>
+          <p>Several days of practice, stillness, and nature in a small group. Dates will be set shortly.</p>
+        </div>
+        <a class="btn btn-ghost" href="mailto:goldenchibylisalee@gmail.com?subject=Retreats%20-%20please%20keep%20me%20posted">Keep Me Posted</a>
       </div>
     </div>
   </section>
@@ -513,23 +595,27 @@
       <h2>Before We Begin</h2>
       <details>
         <summary><span class="q">Do I need experience?</span><span class="pm">+</span></summary>
-        <p>No. Tai Chi and Chi Gong start exactly where you are. It's not about ability, it's about practice.</p>
+        <p>No. Tai Chi and Chi Gong start exactly where you are. The movements are slow, and you practice at your own pace.</p>
+      </details>
+      <details>
+        <summary><span class="q">How do I sign up for a class?</span><span class="pm">+</span></summary>
+        <p>Directly through Yoga Palais or Ekatra Erfurt. You'll find prices there too.</p>
       </details>
       <details>
         <summary><span class="q">Online or in person?</span><span class="pm">+</span></summary>
-        <p>Both. The ongoing practice happens online, so it stays location independent, for you and for me. In-person meetings happen at retreats and whenever we cross paths in Europe or Bali.</p>
+        <p>Both. The weekly classes take place in person in Erfurt, and private sessions are available in person or online. An online course for practicing at home is in preparation.</p>
       </details>
       <details>
         <summary><span class="q">What language does this happen in?</span><span class="pm">+</span></summary>
-        <p>In English or German, whichever works best for you.</p>
+        <p>Mostly in German, and in English when needed.</p>
       </details>
       <details>
         <summary><span class="q">What if the price doesn't work right now?</span><span class="pm">+</span></summary>
-        <p>Reach out. Payment plans are available, and there's flexibility for some situations. This shouldn't fail because of money.</p>
+        <p>Reach out. There's flexibility for some situations.</p>
       </details>
       <details>
         <summary><span class="q">Is the bodywork a medical treatment?</span><span class="pm">+</span></summary>
-        <p>No. Daoist acupressure is an energetic, relaxing form of support. It doesn't replace medical or psychotherapeutic treatment and makes no promise of healing.</p>
+        <p>No. Daoist bodywork is an energetic, relaxing form of support. It doesn't replace medical or psychotherapeutic treatment and makes no promise of healing.</p>
       </details>
     </div>
   </section>
@@ -539,8 +625,8 @@
     <div class="wrap reveal">
       <svg class="ring-min" viewBox="0 0 60 60" aria-hidden="true"><circle cx="30" cy="30" r="25"/></svg>
       <h2>A first conversation: calm and no commitment.</h2>
-      <p>20–30 minutes to feel out whether it's a fit. No sales pitch, no pressure. Just one question: what do you actually want to return to?</p>
-      <a class="btn btn-primary" href="mailto:goldenchibylisalee@gmail.com?subject=A%20First%20Conversation" style="font-size:1.05rem;padding:1rem 2rem">Request a Conversation <span class="arrow">&rarr;</span></a>
+      <p>About 20 minutes to feel out whether it's a fit and what you need right now.</p>
+      <a class="btn btn-primary" data-book href="mailto:goldenchibylisalee@gmail.com?subject=A%20First%20Conversation" style="font-size:1.05rem;padding:1rem 2rem">Request a Conversation <span class="arrow">&rarr;</span></a>
       <p class="final-alt">Or write directly: <a href="mailto:goldenchibylisalee@gmail.com">Email</a> · <a href="https://wa.me/qr/R6HDMY7PUUZIM1" target="_blank" rel="noopener">WhatsApp</a></p>
     </div>
   </section>
@@ -554,7 +640,7 @@
         <svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/></svg>
         <span>Golden Chi with Lisa Lee</span>
       </div>
-      <p class="foot-tagline">Tai Chi · Chi Gong · Daoist Bodywork.</p>
+      <p class="foot-tagline">Tai Chi · Chi Gong · Daoist Bodywork in Erfurt.</p>
     </div>
     <div class="foot-right">
       <div class="socials">
@@ -569,7 +655,7 @@
         </a>
       </div>
       <div class="foot-links">
-        <a href="#wege">Offerings</a>
+        <a href="#wege">Sessions</a>
         <a href="mailto:goldenchibylisalee@gmail.com">Email</a>
         <a href="#impressum">Imprint</a>
       </div>

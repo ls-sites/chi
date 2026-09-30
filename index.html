@@ -5,12 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="color-scheme" content="light">
 <meta name="supported-color-schemes" content="light">
-<title>Golden Chi mit Lisa Lee: Zurück in den eigenen Rhythmus | Tai Chi, Chi Gong & Daoistische Körperarbeit</title>
-<meta name="description" content="Begleitung für Menschen, die aus dem Tempo herauswollen. Tai Chi, Chi Gong und daoistische Körperarbeit: eine Praxis, die du lebst. Online und vor Ort zwischen Europa und Bali.">
+<title>Golden Chi mit Lisa Lee: Tai Chi, Chi Gong &amp; Daoistische Körperarbeit in Erfurt</title>
+<meta name="description" content="Tai Chi und Chi Gong in Erfurt: wöchentliche Kurse im Yoga Palais und im Ekatra, dazu daoistische Körperarbeit in Einzelsessions vor Ort und online.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="de_DE">
-<meta property="og:title" content="Golden Chi mit Lisa Lee: Zurück in den eigenen Rhythmus">
-<meta property="og:description" content="Begleitung für Menschen, die aus dem Tempo herauswollen. Tai Chi, Chi Gong und daoistische Körperarbeit: eine Praxis, die du lebst. Online und vor Ort zwischen Europa und Bali.">
+<meta property="og:title" content="Golden Chi mit Lisa Lee: Tai Chi &amp; Chi Gong in Erfurt">
+<meta property="og:description" content="Tai Chi und Chi Gong in Erfurt: wöchentliche Kurse im Yoga Palais und im Ekatra, dazu daoistische Körperarbeit in Einzelsessions vor Ort und online.">
 <meta property="og:url" content="https://ls-sites.github.io/chi/">
 <meta property="og:image" content="https://ls-sites.github.io/chi/images/thumbnail-home-de.png">
 <meta property="og:image:width" content="1200">
@@ -20,9 +20,16 @@
 <meta name="twitter:image" content="https://ls-sites.github.io/chi/images/thumbnail-home-de.png">
 <link rel="alternate" hreflang="de" href="index.html">
 <link rel="alternate" hreflang="en" href="index-en.html">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  @font-face{font-family:"Spectral";font-style:normal;font-weight:300;font-display:swap;src:url("fonts/spectral-latin-300-normal.woff2") format("woff2")}
+  @font-face{font-family:"Spectral";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/spectral-latin-400-normal.woff2") format("woff2")}
+  @font-face{font-family:"Spectral";font-style:normal;font-weight:500;font-display:swap;src:url("fonts/spectral-latin-500-normal.woff2") format("woff2")}
+  @font-face{font-family:"Spectral";font-style:italic;font-weight:300;font-display:swap;src:url("fonts/spectral-latin-300-italic.woff2") format("woff2")}
+  @font-face{font-family:"Spectral";font-style:italic;font-weight:400;font-display:swap;src:url("fonts/spectral-latin-400-italic.woff2") format("woff2")}
+  @font-face{font-family:"Hanken Grotesk";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/hanken-grotesk-latin-400-normal.woff2") format("woff2")}
+  @font-face{font-family:"Hanken Grotesk";font-style:normal;font-weight:500;font-display:swap;src:url("fonts/hanken-grotesk-latin-500-normal.woff2") format("woff2")}
+  @font-face{font-family:"Hanken Grotesk";font-style:normal;font-weight:600;font-display:swap;src:url("fonts/hanken-grotesk-latin-600-normal.woff2") format("woff2")}
+</style>
 <style>
   :root{
     color-scheme: light only;
@@ -143,6 +150,28 @@
   .recog .turn br{display:none}
   @media(min-width:600px){.recog .turn br{display:inline}}
 
+  /* RECOGNITION: centered, points in a row, statement below */
+  .recog-b{text-align:center}
+  .recog-b .kicker{margin:0 auto 2rem;max-width:none}
+  .recog-b .points-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;text-align:left;counter-reset:pt}
+  @media(max-width:900px){.recog-b .points-row{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:520px){.recog-b .points-row{grid-template-columns:1fr}}
+  .recog-b .points-row p{margin:0;max-width:none;padding-top:1rem;border-top:2px solid var(--jade-2);font-size:1.05rem;line-height:1.45;color:var(--ink);counter-increment:pt}
+  .recog-b .points-row p::before{content:"0" counter(pt);display:block;font-family:"Spectral",serif;font-size:.95rem;color:var(--dawn);margin-bottom:.5rem;letter-spacing:.05em}
+  .recog-b .enso{margin:clamp(2.4rem,5vw,3.6rem) auto 1.6rem;width:clamp(72px,9vw,100px)}
+  .recog-b .stmt{max-width:34ch;margin:0 auto}
+  .recog-b .stmt .l1{font-family:"Spectral",serif;font-size:clamp(1.1rem,1.6vw,1.3rem);color:var(--ink-soft);margin:0 auto .3rem;max-width:none}
+  .recog-b .stmt .l2{font-family:"Spectral",serif;font-weight:300;font-size:clamp(1.8rem,3.6vw,2.8rem);line-height:1.15;color:var(--jade);margin:0 auto 1rem;max-width:none}
+  .recog-b .bottom{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;align-items:center;margin-top:clamp(2.8rem,6vw,4.2rem)}
+  .recog-b .bottom .enso{grid-column:1/3;justify-self:center;margin:0;width:clamp(120px,15vw,190px)}
+  .recog-b .bottom .stmt{grid-column:3/5;justify-self:start;max-width:none;margin:0;text-align:left}
+  @media(max-width:900px){.recog-b .bottom{grid-template-columns:repeat(2,1fr)}.recog-b .bottom .enso{grid-column:1}.recog-b .bottom .stmt{grid-column:2}}
+  .recog-b .bottom .stmt p{margin-left:0;margin-right:0}
+  .recog-b .bottom .stmt .l1{line-height:1.35;margin-bottom:.7rem}
+  .recog-b .bottom .stmt .l3{line-height:1.55}
+  @media(max-width:600px){.recog-b .bottom{grid-template-columns:1fr;gap:1.6rem}.recog-b .bottom .enso,.recog-b .bottom .stmt{grid-column:1}.recog-b .bottom .stmt{justify-self:center;text-align:center}}
+  .recog-b .stmt .l3{font-size:1.05rem;color:var(--ink-soft);margin:0 auto;max-width:44ch}
+
   /* HALTUNG */
   .haltung{background:var(--jade-deep);color:#E7E9E2}
   .haltung .kicker{color:var(--dawn-2)}
@@ -181,36 +210,56 @@
   .dot{width:9px;height:9px;border-radius:50%;border:0;padding:0;background:rgba(245,246,241,.35);cursor:pointer;transition:.2s ease}
   .dot.is-active{background:var(--dawn);transform:scale(1.25)}
 
-  /* OFFERS */
-  .offer-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem;align-items:stretch}
-  @media(max-width:920px){.offer-grid{grid-template-columns:1fr;max-width:520px;margin-inline:auto}}
-  .card{display:flex;flex-direction:column;background:var(--mist-2);border:1px solid var(--line);border-radius:18px;padding:2rem 1.8rem;transition:.3s ease}
-  .card:hover{transform:translateY(-4px);box-shadow:0 22px 50px -28px rgba(25,28,24,.4);border-color:var(--jade-2)}
-  .card.feature:hover{border-color:var(--jade-2)}
-  .card.feature{background:var(--jade-deep);border-color:var(--jade-deep)}
-  .card.feature *{color:#E7E9E2}
-  .card.feature .o-price b{color:#F1F2EC}
-  .card.feature .o-tag{color:var(--dawn-2);border-color:rgba(230,197,126,.4)}
-  .card.feature .incl li::before{box-shadow:inset 0 0 0 1.5px var(--dawn-2)}
-  .card.feature .btn-ghost{border-color:rgba(230,197,126,.55);color:var(--dawn-2)}
-  .card.feature .btn-ghost:hover{background:var(--dawn-2);border-color:var(--dawn-2);color:#1d2017}
-  .offers .card:not(.feature) .btn-ghost{color:var(--jade);border-color:rgba(47,92,80,.45)}
-  .offers .card:not(.feature) .btn-ghost:hover{background:var(--jade);color:var(--mist-2);border-color:var(--jade)}
-  .o-tag{align-self:flex-start;font-size:.68rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--jade);border:1px solid rgba(47,92,80,.3);border-radius:999px;padding:.3rem .7rem;margin-bottom:1.3rem}
-  .card h3{font-size:1.55rem;font-weight:400;margin:0 0 .5rem}
-  .o-for{font-size:.95rem;color:var(--ink-soft);margin:0 0 1.4rem}
-  .card.feature .o-for{color:#B6BBB0}
-  .incl{list-style:none;padding:0;margin:0 0 1.6rem;display:grid;gap:.7rem}
-  .incl li{position:relative;padding-left:1.5rem;font-size:.96rem;line-height:1.5;color:var(--ink-soft)}
-  .card.feature .incl li{color:#C4C9BF}
-  .incl li::before{content:"";position:absolute;left:0;top:.62em;width:7px;height:7px;border-radius:50%;box-shadow:inset 0 0 0 1.5px var(--jade)}
-  .o-price{margin-top:auto;padding-top:1.4rem;border-top:1px solid var(--line)}
-  .card.feature .o-price{border-color:rgba(231,233,226,.18)}
-  .o-price b{font-family:"Spectral",serif;font-weight:400;font-size:2rem;color:var(--ink)}
-  .o-price .per{font-size:.95rem;color:var(--ink-faint)}
-  .o-price small{display:block;font-size:.82rem;color:var(--ink-faint);margin:.25rem 0 1.3rem}
-  .card.feature .o-price small{color:#9AA095}
-  .offer-note{margin:2.4rem auto 0;max-width:50ch;text-align:center;font-size:.96rem;color:var(--ink-soft)}
+  /* SESSIONS (bookable, one row per Cal.com event type) */
+  .sessions{border-top:1px solid var(--line);max-width:900px}
+  .session{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:1rem 2.5rem;align-items:center;padding:1.6rem 0;border-bottom:1px solid var(--line)}
+  .session h3{font-size:1.4rem;font-weight:400;color:var(--jade);margin:0 0 .2rem}
+  .session .meta{font-size:.78rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint);margin:0}
+  .session .desc{font-size:1rem;color:var(--ink-soft);margin:.55rem 0 0;max-width:52ch}
+  .session .side{display:flex;flex-direction:column;align-items:flex-end;gap:.7rem}
+  .session .price{font-family:"Spectral",serif;font-size:1.55rem;color:var(--ink);line-height:1}
+  .session .price small{font-family:"Hanken Grotesk",sans-serif;font-size:.85rem;color:var(--ink-faint)}
+  .session .btn-ghost{color:var(--jade);border-color:rgba(47,92,80,.45);white-space:nowrap}
+  .session .btn-ghost:hover{background:var(--jade);color:var(--mist-2);border-color:var(--jade)}
+  @media(max-width:640px){.session{grid-template-columns:1fr}.session .side{align-items:flex-start}}
+  .sessions-note{font-size:.92rem;color:var(--ink-faint);margin:1.4rem 0 0}
+
+  /* WAITLIST BAND (full width) */
+  .waitlist{background:linear-gradient(120deg,var(--jade),var(--jade-deep));color:#E7E9E2;padding-block:clamp(2.4rem,5vw,3.6rem)}
+  .waitlist .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1.6rem 3rem}
+  .waitlist .kicker{color:var(--dawn-2);margin-bottom:.8rem}
+  .waitlist h2{font-size:clamp(1.5rem,2.6vw,2.05rem);color:#F4F5F0;margin:0 0 .6rem}
+  .waitlist p{color:#C4CEC8;margin:0;max-width:52ch}
+  .waitlist .btn{background:var(--dawn-2);color:#1d2017;flex:none}
+  .waitlist .btn:hover{background:#F0D494}
+
+  /* RETREATS placeholder */
+  .retreats-box{position:relative;overflow:hidden;isolation:isolate;border-radius:18px;padding:clamp(2.2rem,5vw,3.6rem);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1.4rem 3rem;background:var(--jade-deep);color:#F4F5F0}
+  .retreats-box .bg-video{position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover}
+  .retreats-box .bg-scrim{position:absolute;inset:0;z-index:-1;background:linear-gradient(100deg,rgba(23,44,38,.86) 0%,rgba(23,44,38,.72) 55%,rgba(23,44,38,.6) 100%)}
+  .retreats-box .kicker{margin-bottom:.8rem;color:var(--dawn-2)}
+  .retreats-box h2{margin:0 0 .6rem;color:#F4F5F0}
+  .retreats-box p{margin:0;color:rgba(244,245,240,.86);max-width:52ch}
+  .retreats-box .btn-ghost{color:#F4F5F0;border-color:rgba(244,245,240,.55);flex:none;backdrop-filter:blur(4px)}
+  .retreats-box .btn-ghost:hover{background:var(--dawn-2);border-color:var(--dawn-2);color:#1d2017}
+
+  /* COURSES (in-person, Erfurt) */
+  .course-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.3rem;align-items:stretch}
+  @media(max-width:760px){.course-grid{grid-template-columns:1fr;max-width:520px;margin-inline:auto}}
+  .course{display:flex;flex-direction:column;background:var(--mist-2);border:1px solid var(--line);border-radius:18px;overflow:hidden;transition:.3s ease}
+  .course:hover{transform:translateY(-4px);box-shadow:0 22px 50px -28px rgba(25,28,24,.4);border-color:var(--jade-2)}
+  .course img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;background:#cfd6cb}
+  .course-body{display:flex;flex-direction:column;flex:1;padding:1.6rem 1.8rem 1.8rem}
+  .course .o-tag{margin-bottom:1rem}
+  .course .when{font-family:"Spectral",serif;font-weight:400;font-size:clamp(1.6rem,2.4vw,1.95rem);line-height:1.15;color:var(--ink);margin:0}
+  .course h3{font-size:1.3rem;font-weight:400;color:var(--jade);margin:.55rem 0 .15rem}
+  .course .where{font-size:.95rem;color:var(--ink-soft);margin:0 0 1.4rem}
+  .course .btn{margin-top:auto;align-self:flex-start;color:var(--jade);border-color:rgba(47,92,80,.45)}
+  .course .btn:hover{background:var(--jade);color:var(--mist-2);border-color:var(--jade)}
+  .courses-note{margin:2rem auto 0;max-width:52ch;text-align:center;font-size:.96rem;color:var(--ink-soft)}
+
+  #praxis{background:var(--mist-2);border-block:1px solid var(--line)}
+  .about .pull{color:var(--ink);font-size:clamp(1.05rem,1.6vw,1.3rem);margin-top:1.8rem}
 
   /* ABOUT */
   .about{background:linear-gradient(180deg,#DCE7DF,#CFDED6);border-block:1px solid var(--line)}
@@ -280,7 +329,8 @@
     </a>
     <nav class="links" aria-label="Hauptnavigation">
       <a class="hide-sm" href="#praxis">Praxis</a>
-      <a class="hide-sm" href="#wege">Wege</a>
+      <a class="hide-sm" href="#kurse">Kurse</a>
+      <a class="hide-sm" href="#wege">Einzelsession</a>
       <a class="hide-sm" href="#ich">Wer ich bin</a>
       <div class="lang-switch" aria-label="Sprache wählen">
         <a href="index.html" class="is-current">DE</a><span class="sep">|</span><a href="index-en.html">EN</a>
@@ -302,53 +352,38 @@
       <div class="hero-inner">
         <p class="kicker">Tai Chi · Chi Gong · Daoistische Körperarbeit</p>
         <h1>Zurück in den eigenen Rhythmus.</h1>
-        <p class="lead">Ich begleite Menschen, die aus dem Tempo herauswollen, hinein in die eigene Stille, in die Kraft des Einfachen.</p>
+        <p class="lead">Langsame Bewegung, ruhiger Atem, achtsame Berührung. Ich unterrichte Tai Chi und Chi Gong in Erfurt und begleite dich in Einzelsessions.</p>
         <div class="hero-cta">
-          <a class="btn btn-primary" href="#gespraech">Ein erstes Gespräch <span class="arrow">&rarr;</span></a>
-          <a class="btn btn-ghost" href="#wege">Die Angebote ansehen</a>
+          <a class="btn btn-primary" href="#kurse">Zu den Kursen <span class="arrow">&rarr;</span></a>
+          <a class="btn btn-ghost" href="#gespraech">Ein erstes Gespräch</a>
         </div>
-        <p class="hero-note">Online und vor Ort, zwischen Europa und Bali. Keine Vorerfahrung nötig.</p>
+        <p class="hero-note">Jede Woche im Yoga Palais und im Ekatra Erfurt. Keine Vorerfahrung nötig.</p>
       </div>
     </div>
   </section>
 
   <!-- RECOGNITION -->
-  <section class="recog">
-    <div class="wrap split reveal">
-      <div class="split-l">
-        <p class="kicker">Vielleicht kennst du das</p>
-        <div class="points">
-          <p>Du hast genug optimiert.</p>
-          <p>Mehr Produktivität nährt dich nicht.</p>
-          <p>Noch eine App, noch ein Self-Help, und trotzdem leer.</p>
-          <p>Eine Müdigkeit, die du nicht Burnout nennen würdest.</p>
-        </div>
+  <section class="recog-b">
+    <div class="wrap reveal">
+      <p class="kicker">Vielleicht kennst du das</p>
+      <div class="points-row">
+          <p>Der Alltag läuft schnell, und dein Körper kommt kaum hinterher.</p>
+          <p>Du sitzt viel am Tag und sehnst dich nach Bewegung, die guttut.</p>
+          <p>Du willst zur Ruhe kommen und dich dabei lebendig fühlen.</p>
+          <p>Du suchst eine Praxis, die dir in jedem Alter guttut.</p>
       </div>
-      <div class="split-r">
+      <div class="bottom">
         <div class="enso" aria-hidden="true">
           <svg viewBox="0 0 320 320">
             <path class="ring" d="M232 70 C292 108 300 196 246 248 C190 302 96 298 50 244 C8 194 20 104 86 66 C150 30 232 38 268 96"/>
           </svg>
           <div class="qi"><span class="dot"></span></div>
         </div>
-        <p class="turn">Was du brauchst, ist eine lebendige Praxis,<br>
-          die du einfach lebst: zurück in den Körper,<br>
-          in den Atem, in die Ruhe, die ohnehin schon da ist.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- HALTUNG -->
-  <section class="haltung">
-    <div class="wrap split reveal">
-      <div class="split-l">
-        <p class="kicker">Keine Methode. Eine Haltung.</p>
-        <h2>Ich lehre, wie ich lebe.</h2>
-      </div>
-      <div class="split-r">
-        <p>Ich bin kein Wellness-Coach und keine spirituelle Influencerin. Ich bin eine Wegbegleiterin im daoistischen Sinne. Was ich teile, ist keine Sammlung von Übungen, sondern eine Haltung: die Einheit von Lehre und Leben.</p>
-        <p>Freiheit zeigt sich nur darin, wie jemand lebt. Ich reise leicht, übe täglich und arbeite von dort aus, wo ich gerade bin. Das ist der Boden, auf dem alles andere steht.</p>
-        <p class="pull">„Das Weiche überwindet das Harte. Die Stille bewegt mehr als die Eile.“</p>
+        <div class="stmt">
+          <p class="l1">Höher, schneller, weiter<br>kennst du schon.</p>
+          <p class="l2">Hier geht es<br>tiefer, langsamer,<br>entspannter.</p>
+          <p class="l3">Zurück in den Körper, in den Atem<br>und in eine Ruhe, die dir Kraft gibt.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -359,25 +394,59 @@
       <div class="sec-head">
         <p class="kicker">Die Praxis</p>
         <h2 class="h2-sm">Drei Zugänge, ein Fluss: Bewegung, Atem, Berührung.</h2>
-        <p class="sec-intro">Drei Übungsformen, ein Prinzip: weniger tun, mehr da sein. Es genügt, aufzutauchen und mitzugehen.</p>
+        <p class="sec-intro">Drei Übungsformen, ein Prinzip: weniger tun, mehr da sein. Es genügt, da zu sein und mitzumachen.</p>
       </div>
       <div class="practice-grid">
         <div class="practice">
           <h3>Tai Chi</h3>
           <p class="zh">太极 · bewegte Stille</p>
-          <p>Langsame, durchgehende Bewegung, in der Körper und Geist zur Ruhe kommen: ein Gehen im eigenen Tempo, ganz ohne Leistungsdruck.</p>
+          <p>Langsame, fließende Bewegungen, in denen Körper und Geist zur Ruhe kommen. Du übst in deinem eigenen Tempo, ganz ohne Leistungsdruck.</p>
         </div>
         <div class="practice">
           <h3>Chi Gong</h3>
           <p class="zh">气功 · Atem &amp; Kraft</p>
-          <p>Einfache Übungen, die den Atem öffnen und die Energie wieder fließen lassen. Was sich schwer und müde anfühlt, wird wieder durchlässig.</p>
+          <p>Einfache Übungen, die den Atem öffnen und die Energie wieder fließen lassen. Was sich schwer und müde anfühlt, wird wieder leicht und beweglich.</p>
         </div>
         <div class="practice">
-          <h3>Daoistische Akupressur</h3>
-          <p class="zh">点穴 · Körperarbeit</p>
-          <p>Sanfte Arbeit an den Punkten und Bahnen des Körpers. Tiefe Entspannung, Lösen von Festgehaltenem, ein Nach-Hause-Kommen im eigenen System.</p>
+          <h3>Daoistische Körperarbeit</h3>
+          <p class="zh">点穴 · Akupressur</p>
+          <p>Sanfte Arbeit an den Punkten und Bahnen des Körpers. Tiefe Entspannung, Lösen von Festgehaltenem, ein Ankommen im eigenen Körper.</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- KURSE (vor Ort, Erfurt) -->
+  <section id="kurse">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="kicker">Aktuelle Kurse</p>
+        <h2 class="h2-sm">Jede Woche vor Ort in Erfurt.</h2>
+        <p class="sec-intro">Tai Chi und Chi Gong in zwei Erfurter Yogastudios. Komm einfach dazu, Vorerfahrung brauchst du nicht.</p>
+      </div>
+      <div class="course-grid">
+        <article class="course reveal">
+          <img style="object-position:center top" src="images/yoga-palais-erfurt.jpg" alt="Übungsraum im Yoga Palais Erfurt" loading="lazy" width="680" height="510">
+          <div class="course-body">
+            <span class="o-tag">Jeden Mittwoch</span>
+            <p class="when">16:00 – 17:00 Uhr</p>
+            <h3>Yoga Palais Erfurt</h3>
+            <p class="where">Tai Chi &amp; Chi Gong · vor Ort in Erfurt</p>
+            <a class="btn btn-ghost" href="https://www.yoga-palais.de/" target="_blank" rel="noopener">Zum Studio <span class="arrow">&rarr;</span></a>
+          </div>
+        </article>
+        <article class="course reveal">
+          <img src="images/ekatra-erfurt.jpg" alt="Übungsraum im Ekatra Erfurt" loading="lazy" width="680" height="453">
+          <div class="course-body">
+            <span class="o-tag">Jeden Freitag</span>
+            <p class="when">15:00 – 16:15 Uhr</p>
+            <h3>Ekatra Erfurt</h3>
+            <p class="where">Tai Chi &amp; Chi Gong · vor Ort in Erfurt</p>
+            <a class="btn btn-ghost" href="https://www.ekatra.de/" target="_blank" rel="noopener">Zum Studio <span class="arrow">&rarr;</span></a>
+          </div>
+        </article>
+      </div>
+      <p class="courses-note reveal">Anmeldung und Preise direkt beim jeweiligen Studio.</p>
     </div>
   </section>
 
@@ -393,24 +462,24 @@
         <div class="slides">
           <article class="slide" data-slide>
             <blockquote>
-              <p>Today I've finally tried Chi Gong for the first time. I'm not rushing to say a lot, but for today:</p>
+              <p>Heute habe ich endlich zum ersten Mal Chi Gong ausprobiert. Ich will nicht vorschnell viel sagen, aber für heute:</p>
               <ul>
-                <li>I've gotten lighter in my head</li>
-                <li>I turned dreamy and traveled to meadows from my childhood</li>
-                <li>I remembered the pleasure of practicing Javanese dance</li>
-                <li>I settled into the belief that everything's going to be alright</li>
-                <li>I found a way to plan my future — the plan was already there, now it's a solid road map</li>
+                <li>Mein Kopf ist leichter geworden.</li>
+                <li>Ich bin ins Träumen gekommen und auf die Wiesen meiner Kindheit gereist.</li>
+                <li>Ich habe mich an die Freude am javanischen Tanz erinnert.</li>
+                <li>Ich bin in dem Vertrauen angekommen, dass alles gut wird.</li>
+                <li>Ich habe einen Weg gefunden, meine Zukunft zu planen: Der Plan war schon da, jetzt ist er ein klarer Fahrplan.</li>
               </ul>
             </blockquote>
-            <cite>Jan Jalan</cite>
+            <cite>Jan Jalan · aus dem Englischen übersetzt</cite>
           </article>
           <article class="slide" data-slide hidden>
             <blockquote>
-              <p>I had my first Chi Gong session with Lisa and it was a truly beautiful experience. I reached a deep state of relaxation, yet at the same time felt surprisingly energized by the end — with a sense of inner peace that I don't usually achieve through meditation.</p>
-              <p>The flow of Chi felt very tangible: warmth in the hands, a gentle tingling, almost like touching energy directly. It was both grounding and subtle at once, and left me feeling centered and restored.</p>
-              <p>She creates a calm, attentive space that makes it easy to let go and fully experience the practice. I'm genuinely curious to continue exploring this discipline.</p>
+              <p>Ich hatte meine erste Chi-Gong-Session mit Lisa, und es war eine wunderschöne Erfahrung. Ich kam in eine tiefe Entspannung und fühlte mich am Ende trotzdem überraschend voller Energie, mit einem inneren Frieden, den ich durch Meditation sonst selten erreiche.</p>
+              <p>Das Fließen des Chi war deutlich spürbar: Wärme in den Händen, ein sanftes Kribbeln, fast so, als würde man Energie direkt berühren. Es war erdend und fein zugleich, und danach fühlte ich mich zentriert und erholt.</p>
+              <p>Sie schafft einen ruhigen, aufmerksamen Raum, in dem es leichtfällt, loszulassen und die Praxis ganz zu erleben. Ich bin wirklich neugierig, diese Übungsform weiter zu erkunden.</p>
             </blockquote>
-            <cite>Vita</cite>
+            <cite>Vita · aus dem Englischen übersetzt</cite>
           </article>
         </div>
         <div class="slider-nav">
@@ -425,69 +494,51 @@
     </div>
   </section>
 
-  <!-- OFFERS -->
-  <section id="wege" class="offers">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <p class="kicker">Wege, gemeinsam zu gehen</p>
-        <h2 class="h2-sm">Drei Tiefen. Wähle nach dem, wo du gerade stehst.</h2>
-        <p class="sec-intro">Drei Angebote in unterschiedlicher Tiefe und Verbindlichkeit. Wähle das, das gerade zu dir passt.</p>
+  <!-- SESSIONS -->
+  <!-- BUCHUNG: Sobald Cal.com eingerichtet ist, das href aller Links mit data-book durch den jeweiligen Cal.com-Link ersetzen (ein Event-Typ pro Zeile). -->
+  <section id="wege">
+    <div class="wrap reveal">
+      <div class="sec-head">
+        <p class="kicker">Einzelsessions</p>
+        <h2 class="h2-sm">Eine Session nur für dich.</h2>
+        <p class="sec-intro">Vor Ort in Erfurt oder online. Wähle, was gerade passt, und buche deinen Termin.</p>
       </div>
-
-      <div class="offer-grid">
-        <article class="card reveal">
-          <span class="o-tag">Beginnen</span>
-          <h3>Der gemeinsame Morgen</h3>
-          <p class="o-for">Für alle, die eine ruhige, regelmäßige Praxis suchen: ortsunabhängig, auch unterwegs.</p>
-          <ul class="incl">
-            <li>Wöchentliche Live-Praxis online (Tai Chi &amp; Chi Gong), ca. 45 Min.</li>
-            <li>Monatlicher daoistischer Impuls als Text oder Audio</li>
-            <li>Aufzeichnungen zum Nachgehen im eigenen Tempo</li>
-            <li>Eine kleine, stille Gruppe statt einer Menge</li>
-          </ul>
-          <div class="o-price">
-            <b>39&nbsp;€</b><span class="per"> / Monat</span>
-            <small>Richtwert 35–45 € · jederzeit kündbar</small>
-            <a class="btn btn-ghost" href="#gespraech" style="width:100%;justify-content:center">Dabei sein</a>
+      <div class="sessions">
+        <article class="session">
+          <div>
+            <h3>Daoistische Körperarbeit</h3>
+            <p class="meta">90 Min. · vor Ort in Erfurt</p>
+            <p class="desc">Sanfte Arbeit an den Punkten und Bahnen des Körpers, abgestimmt auf das, was du gerade brauchst.</p>
+          </div>
+          <div class="side">
+            <span class="price">95&nbsp;€</span>
+            <a class="btn btn-ghost" data-book href="mailto:goldenchibylisalee@gmail.com?subject=Termin%20Daoistische%20K%C3%B6rperarbeit">Termin buchen <span class="arrow">&rarr;</span></a>
           </div>
         </article>
-
-        <article class="card feature reveal">
-          <span class="o-tag">Vertiefen</span>
-          <h3>Zurück in den Fluss</h3>
-          <p class="o-for">Persönliche Begleitung über drei Monate, für einen Übergang, der Tiefe braucht.</p>
-          <ul class="incl">
-            <li>1:1-Begleitung, Praxis nach deinem Rhythmus aufgebaut</li>
-            <li>Daoistische Körperarbeit, online angeleitet und vor Ort, wenn wir uns begegnen</li>
-            <li>Regelmäßige Gespräche, dazwischen erreichbar</li>
-            <li>Kein Programm von der Stange, sondern dein Weg</li>
-          </ul>
-          <div class="o-price">
-            <b>890&nbsp;€</b><span class="per"> / 3 Monate</span>
-            <small>Richtwert 790–990 € · auch in Raten</small>
-            <a class="btn btn-ghost" href="#gespraech" style="width:100%;justify-content:center">Anfragen</a>
+        <article class="session">
+          <div>
+            <h3>Online-Session</h3>
+            <p class="meta">Tai Chi &amp; Chi Gong · 1:1 online</p>
+            <p class="desc">Persönliche Praxis per Video, von dort aus, wo du gerade bist.</p>
+          </div>
+          <div class="side">
+            <span class="price"><small>Preis auf Anfrage</small></span>
+            <a class="btn btn-ghost" data-book href="mailto:goldenchibylisalee@gmail.com?subject=Termin%20Online-Session">Termin buchen <span class="arrow">&rarr;</span></a>
           </div>
         </article>
-
-        <article class="card reveal">
-          <span class="o-tag">Eintauchen</span>
-          <h3>Eine Woche im Fluss</h3>
-          <p class="o-for">Tai Chi Retreat im Tessin, 04.–10. Oktober 2026, Hotel Panorama über dem Lago di Lugano.</p>
-          <ul class="incl">
-            <li>6 Tage Praxis: Tai Chi, Chi Gong, Meditation, Wandern, Stille</li>
-            <li>Kleine Gruppe, 8–10 Menschen</li>
-            <li>Unterkunft (EZ/DZ) und Bio-Verpflegung inklusive</li>
-            <li>Bewusste Pausen zwischen den Einheiten</li>
-          </ul>
-          <div class="o-price">
-            <b>1.500&nbsp;€</b>
-            <small>alles inklusive · begrenzte Plätze</small>
-            <a class="btn btn-ghost" href="retreat-de.html" style="width:100%;justify-content:center">Zum Retreat</a>
+        <article class="session">
+          <div>
+            <h3>Kennenlerngespräch</h3>
+            <p class="meta">ca. 20 Min. · online</p>
+            <p class="desc">Ein erstes Gespräch, um zu spüren, ob es passt, und herauszufinden, was du brauchst.</p>
+          </div>
+          <div class="side">
+            <span class="price"><small>kostenlos</small></span>
+            <a class="btn btn-ghost" data-book href="mailto:goldenchibylisalee@gmail.com?subject=Ein%20erstes%20Gespr%C3%A4ch">Termin buchen <span class="arrow">&rarr;</span></a>
           </div>
         </article>
       </div>
-
-      <p class="offer-note reveal">Wenn der Preis gerade schwierig ist, sprich mich an. Für manche gibt es Spielraum, denn wichtig ist vor allem, dass es für dich passt.</p>
+      <p class="sessions-note">Wenn der Preis gerade schwierig ist, sprich mich an. Für manche Situationen gibt es Spielraum.</p>
     </div>
   </section>
 
@@ -498,10 +549,41 @@
         <div class="portrait" role="img" aria-label="Lisa Lee"></div>
         <div>
           <p class="kicker">Wer ich bin</p>
-          <h2>Ich unterrichte Freiheit nicht.<br>Ich lebe sie.</h2>
-          <p class="muted">Ich komme aus Deutschland und lebe nomadisch, im Pendeln zwischen Europa und Bali. Tai Chi, Chi Gong und die daoistische Körperarbeit sind die Art, wie ich lebe.</p>
-          <p class="muted">Menschen folgen mir, weil ich etwas verkörpere: eine Verankerung, die überallhin mitreist, und eine Ruhe, die sich nur durch Übung einstellt. Genau das gebe ich weiter, ganz einfach, von Mensch zu Mensch.</p>
+          <h2>Ich lehre, wie ich lebe.</h2>
+          <p class="muted">Ich bin Lisa und unterrichte Tai Chi und Chi Gong in und um Erfurt. Die daoistische Praxis ist die Art, wie ich lebe: langsam, aufmerksam und nah an der Natur.</p>
+          <p class="muted">In meinen Kursen und Sessions geht es um Erholung und Rückverbindung, mit dem eigenen Körper, dem Atem und der Natur. Deshalb arbeite ich gern mit anderen zusammen, mit Yogastudios in Erfurt und bei gemeinsamen Tagen draußen.</p>
+          <p class="pull">„Das Weiche überwindet das Harte. Die Stille bewegt mehr als die Eile.“</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WAITLIST: online course in preparation -->
+  <section class="waitlist" id="online">
+    <div class="wrap reveal">
+      <div>
+        <p class="kicker">In Vorbereitung</p>
+        <h2>Ein Online-Kurs zum Üben von zu Hause.</h2>
+        <p>Tai Chi und Chi Gong im eigenen Tempo, auch ohne Vorerfahrung. Trag dich auf die Warteliste ein, dann bekommst du eine E-Mail, sobald es losgeht.</p>
+      </div>
+      <a class="btn" href="mailto:goldenchibylisalee@gmail.com?subject=Warteliste%20Online-Kurs">Auf die Warteliste <span class="arrow">&rarr;</span></a>
+    </div>
+  </section>
+
+  <!-- RETREATS: Platzhalter. Nächstes Retreat (z. B. Silvester) hier eintragen, sobald es feststeht. -->
+  <section id="retreats">
+    <div class="wrap reveal">
+      <div class="retreats-box">
+        <video class="bg-video" autoplay muted loop playsinline preload="metadata" aria-hidden="true">
+          <source src="images/349489_tiny.mp4" type="video/mp4">
+        </video>
+        <div class="bg-scrim" aria-hidden="true"></div>
+        <div>
+          <p class="kicker">Kommende Retreats</p>
+          <h2 class="h2-sm">Die nächsten Retreats werden bald bekanntgegeben.</h2>
+          <p>Mehrere Tage Praxis, Stille und Natur in kleiner Gruppe. Die Termine stehen in Kürze fest.</p>
+        </div>
+        <a class="btn btn-ghost" href="mailto:goldenchibylisalee@gmail.com?subject=Retreats%20-%20bitte%20informieren">Informiert werden</a>
       </div>
     </div>
   </section>
@@ -513,11 +595,15 @@
       <h2>Bevor wir beginnen</h2>
       <details>
         <summary><span class="q">Brauche ich Vorerfahrung?</span><span class="pm">+</span></summary>
-        <p>Nein. Tai Chi und Chi Gong beginnen genau dort, wo du stehst. Es geht nicht um Können, sondern ums Üben.</p>
+        <p>Nein. Tai Chi und Chi Gong beginnen dort, wo du stehst. Die Bewegungen sind langsam, und du übst in deinem eigenen Tempo.</p>
+      </details>
+      <details>
+        <summary><span class="q">Wie melde ich mich für einen Kurs an?</span><span class="pm">+</span></summary>
+        <p>Direkt beim Yoga Palais oder im Ekatra Erfurt. Dort erfährst du auch die Preise.</p>
       </details>
       <details>
         <summary><span class="q">Online oder vor Ort?</span><span class="pm">+</span></summary>
-        <p>Beides. Die laufende Praxis findet online statt, damit sie ortsunabhängig bleibt, für dich und für mich. Begegnungen vor Ort gibt es bei Retreats und wenn wir uns in Europa oder auf Bali treffen.</p>
+        <p>Beides. Die wöchentlichen Kurse finden vor Ort in Erfurt statt, Einzelsessions gibt es vor Ort oder online. Ein Online-Kurs zum Üben von zu Hause ist in Vorbereitung.</p>
       </details>
       <details>
         <summary><span class="q">In welcher Sprache findet das statt?</span><span class="pm">+</span></summary>
@@ -525,11 +611,11 @@
       </details>
       <details>
         <summary><span class="q">Was, wenn der Preis gerade nicht passt?</span><span class="pm">+</span></summary>
-        <p>Sprich mich an. Es gibt Ratenzahlung und für manche Situationen Spielraum. Das soll nicht am Geld scheitern.</p>
+        <p>Sprich mich an. Für manche Situationen gibt es Spielraum.</p>
       </details>
       <details>
         <summary><span class="q">Ist die Körperarbeit eine medizinische Behandlung?</span><span class="pm">+</span></summary>
-        <p>Nein. Die daoistische Akupressur ist eine energetische, entspannende Begleitung. Sie ersetzt keine ärztliche oder psychotherapeutische Behandlung und ist kein Heilversprechen.</p>
+        <p>Nein. Die daoistische Körperarbeit ist eine energetische, entspannende Begleitung. Sie ersetzt keine ärztliche oder psychotherapeutische Behandlung und ist kein Heilversprechen.</p>
       </details>
     </div>
   </section>
@@ -539,8 +625,8 @@
     <div class="wrap reveal">
       <svg class="ring-min" viewBox="0 0 60 60" aria-hidden="true"><circle cx="30" cy="30" r="25"/></svg>
       <h2>Ein erstes Gespräch: ruhig und unverbindlich.</h2>
-      <p>20–30 Minuten, um zu spüren, ob es passt. Kein Verkaufsgespräch, kein Druck. Nur die Frage: Wohin willst du eigentlich zurück?</p>
-      <a class="btn btn-primary" href="mailto:goldenchibylisalee@gmail.com?subject=Ein%20erstes%20Gespräch" style="font-size:1.05rem;padding:1rem 2rem">Gespräch anfragen <span class="arrow">&rarr;</span></a>
+      <p>Etwa 20 Minuten, um zu spüren, ob es passt, und herauszufinden, was du gerade brauchst.</p>
+      <a class="btn btn-primary" data-book href="mailto:goldenchibylisalee@gmail.com?subject=Ein%20erstes%20Gespr%C3%A4ch" style="font-size:1.05rem;padding:1rem 2rem">Gespräch anfragen <span class="arrow">&rarr;</span></a>
       <p class="final-alt">Oder schreib direkt: <a href="mailto:goldenchibylisalee@gmail.com">Email</a> · <a href="https://wa.me/qr/R6HDMY7PUUZIM1" target="_blank" rel="noopener">WhatsApp</a></p>
     </div>
   </section>
@@ -554,7 +640,7 @@
         <svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/></svg>
         <span>Golden Chi mit Lisa Lee</span>
       </div>
-      <p class="foot-tagline">Tai Chi · Chi Gong · Daoistische Körperarbeit.</p>
+      <p class="foot-tagline">Tai Chi · Chi Gong · Daoistische Körperarbeit in Erfurt.</p>
     </div>
     <div class="foot-right">
       <div class="socials">
@@ -569,7 +655,7 @@
         </a>
       </div>
       <div class="foot-links">
-        <a href="#wege">Wege</a>
+        <a href="#wege">Einzelsession</a>
         <a href="mailto:goldenchibylisalee@gmail.com">Email</a>
         <a href="#impressum">Impressum</a>
       </div>
