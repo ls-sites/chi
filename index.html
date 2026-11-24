@@ -844,6 +844,25 @@
     .flow-ribbon .track{animation:none!important}
     .reveal{filter:none}
   }
+  /* Breathing words: "Hier geht es" stays, then langsamer / tiefer / geschmeidiger breathe in and out one at a time */
+  .turn .l2.breath-line{background:none;animation:none;color:inherit;-webkit-text-fill-color:currentColor}
+  .breath-words{display:inline-grid;vertical-align:top;justify-items:start}
+  @media(max-width:640px){.breath-words{justify-items:center}}
+  .breath-words .bw{grid-area:1/1;opacity:0;padding:0 .1em .08em 0;transform-origin:left center;
+    animation:goldflow 9s ease-in-out infinite alternate,wordBreath 16.5s cubic-bezier(.37,0,.63,1) 1.2s infinite}
+  @media(max-width:640px){.breath-words .bw{transform-origin:center}}
+  .breath-words .bw:nth-child(2){animation-delay:0s,6.7s}
+  .breath-words .bw:nth-child(3){animation-delay:0s,12.2s}
+  .turn:not(.in) .breath-words .bw{animation-play-state:paused}
+  /* one even breath per word: 2.75s in, 2.75s out (half the 11s enso breath) */
+  @keyframes wordBreath{
+    0%{opacity:0;transform:scale(.97)}
+    16.667%{opacity:1;transform:scale(1.015)}
+    33.333%,100%{opacity:0;transform:scale(.97)}
+  }
+  .breath-static{display:none}
+  .bl-sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+  @media(prefers-reduced-motion:reduce){.breath-words{display:none}.breath-static{display:inline}}
 </style>
 
 </head>
@@ -923,7 +942,7 @@
         </div>
         <div class="stmt">
           <p class="l1">Höher, schneller, weiter<br>kennst du schon.</p>
-          <p class="l2">Hier geht es<br>tiefer, langsamer,<br>geschmeidiger.</p>
+          <p class="l2 breath-line"><span class="gold-text">Hier geht es</span><br><span class="breath-words" aria-hidden="true"><span class="bw gold-text">langsamer</span><span class="bw gold-text">tiefer</span><span class="bw gold-text">geschmeidiger</span></span><span class="breath-static gold-text" aria-hidden="true">langsamer, tiefer,<br>geschmeidiger.</span><span class="bl-sr">langsamer, tiefer, geschmeidiger.</span></p>
           <p class="l3">Zurück in den Körper, in den Atem<br>und in eine Ruhe, die dir Kraft gibt.</p>
         </div>
       </div>
